@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 8 · Liabilities · FA1 final</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Ch 5 Cash</a>
+      <a href="chapter-6.html">Ch 6 Inventory</a>
+      <a href="chapter-7.html">Ch 7 PPE</a>
+      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="layout">
+    <aside class="toc">
+      <strong>Chapter 8</strong>
+      <a href="#scope">What the chapter covers</a>
+      <a href="#ap">Accounts payable</a>
+      <a href="#notes">Notes payable</a>
+      <a href="#provisions">Provisions</a>
+      <a href="#warranty">Warranties</a>
+      <a href="#contingent">Contingent liabilities</a>
+      <a href="#mortgage">Mortgages</a>
+      <a href="#bonds">Bonds</a>
+      <a href="#price">Issue price</a>
+      <a href="#par">Issued at par</a>
+      <a href="#discount">Issued at a discount</a>
+      <a href="#premium">Issued at a premium</a>
+      <a href="#retire">Retirement</a>
+      <a href="#tie">Times interest earned</a>
+      <a href="#traps">Exam traps</a>
+      <a href="#practice">Practice</a>
+    </aside>
+    <div>
+      <section class="section" id="scope">
+        <p class="kicker">Chapter 8</p>
+        <h1>Liabilities</h1>
+        <p>The slides do not print a learning-outcome list. The path they actually teach is accounts payable, notes payable and interest across a year-end, provisions and warranties, the probability table for contingencies, mortgages, and bonds issued at par, at a discount, and at a premium, including effective-interest amortization and retirement at maturity.</p>
+        <p>For long-term debt the roadmap on the slide is: choose the method of financing, issue the debt, pay interest, amortize a bond premium or discount, and retire the debt.</p>
+        <p>A liability, as restated in the chapter, is a present obligation arising from past events, the settlement of which is expected to result in an outflow of resources.</p>
+      </section>
+
+      <section class="section" id="ap">
+        <h2>Accounts payable</h2>
+        <p>Day-to-day purchases of goods and services are often on credit, with cash paid after the goods or services have been provided. That creates an obligation to the supplier. For many companies this is a relatively inexpensive way to finance inventory, because interest does not normally accrue on accounts payable. Generous terms can even let the buyer resell the goods and collect cash before the supplier must be paid.</p>
+        <p>Accounts payable turnover measures how quickly management pays suppliers. A high ratio normally means the company is paying on a timely basis. The slides use cost of goods sold, not purchases, in the numerator.</p>
+        <div class="formula">
+          <p class="eq">Accounts payable turnover = Cost of goods sold ÷ Average accounts payable</p>
+          <p class="eq">Average days to pay payables = 365 ÷ Accounts payable turnover</p>
+        </div>
+        <p>Starbucks, from the comparison box: 2021 = 7.91, 2022 = 7.78, 2023 = 7.64. Days in 2023 = 365 / 7.64 = <strong>47.77 days</strong>. On average, Starbucks took between 47 and 48 days to pay suppliers in 2023. The turnover fell from 2021 to 2023, so payment slowed.</p>
+      </section>
+
+      <section class="section" id="notes">
+        <h2>Notes payable</h2>
+        <p>When a company borrows, it normally signs a written contract and reports a note payable. The contract states the amount borrowed, the repayment date, and the interest rate. To the borrower, interest is the cost of using someone else’s money and is an expense. To the lender, the same interest is revenue.</p>
+        <div class="formula">
+          <p class="eq">Interest = principal × annual interest rate × time</p>
+        </div>
+        <p>You need the principal and the interest rate per period. Time is the fraction of the year the money was used.</p>
+        <h3>Worked example · six-month, 12% note</h3>
+        <p>On 1 November a company with a 31 December year-end borrows $100,000 for six months at 12%. Principal and interest are payable on 30 April of the next year.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">100,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Notes payable</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>1 November. No interest on the borrowing date.</caption>
+          </table>
+        </div>
+        <p>Interest for November and December = 100,000 × 0.12 × 2/12 = <strong>2,000</strong>. Interest for January through April = 100,000 × 0.12 × 4/12 = <strong>4,000</strong>. Total interest over the six months is 6,000.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest expense</td><td class="num">2,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Interest payable</td><td class="num"></td><td class="num">2,000</td></tr>
+            </tbody>
+            <caption>31 December adjusting entry. Liabilities up 2,000. Equity down 2,000 through the expense.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest expense</td><td class="num">4,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Interest payable</td><td class="num"></td><td class="num">4,000</td></tr>
+            </tbody>
+            <caption>30 April. Record the four new months of interest before paying.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest payable</td><td class="num">6,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Notes payable</td><td class="num">100,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">106,000</td></tr>
+            </tbody>
+            <caption>30 April payment. Interest payable is 2,000 + 4,000. Cash is principal plus all six months of interest.</caption>
+          </table>
+        </div>
+        <p>The 30 April expense entry and the payment entry are separate on the slides. Combining them into one entry (debit interest expense 4,000, debit interest payable 2,000, debit notes payable 100,000, credit cash 106,000) balances, but it is not how the lecture writes it. Learn the two-step version.</p>
+      </section>
+
+      <section class="section" id="provisions">
+        <h2>Provisions</h2>
+        <p>A provision is a liability of uncertain timing or amount. Some liabilities on the balance sheet are estimates because the exact amount will not be known until a future date. Recognize a provision only when all three conditions are met:</p>
+        <ol>
+          <li><strong>Present obligation</strong> from a past event. A legal obligation comes from a contract, legislation, or other operation of law (a bank loan, a pending lawsuit). A constructive obligation comes from the entity’s own actions, where it has created a valid expectation that it will accept a responsibility (a published environmental clean-up policy).</li>
+          <li><strong>Probable outflow.</strong> The slides define this, for a provision, as more likely than not: a likelihood greater than 50%.</li>
+          <li><strong>Reliable estimate</strong> of the amount.</li>
+        </ol>
+        <p>Two examples are developed. An environmental lawsuit for dumping toxic waste can meet the three tests and be recorded as a provision. A product warranty is the example with numbers.</p>
+      </section>
+
+      <section class="section" id="warranty">
+        <h2>Warranty liabilities</h2>
+        <p>A warranty liability is the estimated future cost of repairing or replacing defective products already sold. Record the estimate in the selling period so the expense matches the sales revenue. Later, when customers claim, reduce the liability. Do not record warranty expense again at the repair date.</p>
+        <p>Starbucks example: estimated warranty service on coffee-brewing equipment sold this year is $150,000. Recorded in addition to the sale:</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Warranty expense</td><td class="num">150,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Warranty liability</td><td class="num"></td><td class="num">150,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Sun Company</h3>
+        <p>Electric appliances sold for NT$50,000 in July under a one-year warranty. Average repair cost is estimated at 4% of the sales price. Expense = 50,000 × 0.04 = NT$2,000.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Product warranty expense</td><td class="num">2,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Product warranty provision</td><td class="num"></td><td class="num">2,000</td></tr>
+            </tbody>
+            <caption>31 July.</caption>
+          </table>
+        </div>
+        <p>On 12 December a customer needs an NT$800 part and NT$50 of labor under the warranty. The provision is reduced. Supplies and wages payable are credited, not warranty expense.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Product warranty provision</td><td class="num">850</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Supplies</td><td class="num"></td><td class="num">800</td></tr>
+              <tr><td class="acct cr">Wages payable</td><td class="num"></td><td class="num">50</td></tr>
+            </tbody>
+            <caption>12 December. 800 + 50 = 850.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="contingent">
+        <h2>When a contingency is recorded, disclosed, or omitted</h2>
+        <p>Some events create only a reasonably possible future sacrifice. Those contingent liabilities may be reported in the notes and not on the balance sheet. Whether an item is on the balance sheet, in the notes, or nowhere depends on the probability of a future sacrifice and on whether management can estimate the amount. The lecture table is:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Probable</th><th>Reasonably possible</th><th>Remote</th></tr></thead>
+            <tbody>
+              <tr><td>Amount can be reasonably estimated</td><td>Record as a liability</td><td>Disclose in footnotes</td><td>Disclosure not required</td></tr>
+              <tr><td>Amount cannot be reasonably estimated</td><td>Disclose in footnotes</td><td>Disclose in footnotes</td><td>Disclosure not required</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Definitions printed under the table:</p>
+        <ul>
+          <li><strong>Probable</strong> — the future event or events are likely to occur.</li>
+          <li><strong>Reasonably possible</strong> — the chance is more than remote but less than likely.</li>
+          <li><strong>Remote</strong> — the chance is slight.</li>
+        </ul>
+        <div class="callout note">
+          <strong class="label">Two uses of “probable” in this deck</strong>
+          Earlier, a provision is recognized when an outflow is “probable (more likely than not),” meaning a likelihood greater than 50%. The table above defines probable as “likely.” Both wordings are in the slides. When you are applying the three provision tests, use the more-likely-than-not test the provision slide states. When you are filling in the three-column table, use the table’s own headings and definitions.
+        </div>
+      </section>
+
+      <section class="section" id="mortgage">
+        <h2>Mortgages payable</h2>
+        <p>A mortgage payable is a long-term loan to buy real estate, with the property pledged as collateral. An amortization schedule splits each payment into interest and principal. At year-end the mortgage is reported in two places:</p>
+        <ol>
+          <li>The principal to be paid during the next year is a current liability.</li>
+          <li>The remaining principal is a long-term liability.</li>
+        </ol>
+        <p>Those two amounts add up to the unpaid principal. Do not also report the full unpaid principal a second time.</p>
+        <h3>McGiven Automobile Company</h3>
+        <p>On 1 January McGiven borrows $100,000 to buy a showroom and pledges the showroom. The mortgage is 8% for 30 years. Monthly payment = PMT(0.08/12, 360, 100000) = <strong>$733.76</strong>, due on 31 January and at each month-end after that.</p>
+        <div class="formula">
+          <p class="eq">Interest, first month = 100,000 × 8% × 1/12 = 666.67</p>
+          <p class="eq">Principal, first month = 733.76 − 666.67 = 67.09</p>
+          <p class="eq">Balance after the first payment = 100,000 − 67.09 = 99,932.91</p>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">100,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Mortgage payable</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>1 January. Borrowing to buy the showroom.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Mortgage payable</td><td class="num">67.09</td><td class="num"></td></tr>
+              <tr><td class="acct">Interest expense</td><td class="num">666.67</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">733.76</td></tr>
+            </tbody>
+            <caption>31 January, first payment. Only the principal debit reduces the liability.</caption>
+          </table>
+        </div>
+        <p>The next month’s interest is 99,932.91 × 8% × 1/12 = 666.22, so principal is 733.76 − 666.22 = 67.54. Interest falls and principal rises each month because the balance falls. The slide’s schedule shows the balance after payment 12 as $99,164.70. Principal repaid in the first year is 100,000 − 99,164.70 = 835.30. Payments 359 and 360 are almost entirely principal; the last payment brings the balance to zero.</p>
+        <h3>A second mortgage, computation only</h3>
+        <p>$200,000 borrowed for 20 years at 8% compounded monthly. Payment = PMT(0.08/12, 240, 200000) = <strong>$1,672.88</strong>. First month: interest = 200,000 × 8% × 1/12 = <strong>1,333.33</strong>. Principal = 1,672.88 − 1,333.33 = <strong>339.55</strong>.</p>
+      </section>
+
+      <section class="section" id="bonds">
+        <h2>Bonds</h2>
+        <p>Large borrowings are often impractical for a single bank, so companies issue bonds to the investing public. After issue, bonds trade on exchanges. That gives investors liquidity: they can convert the investment into cash by selling the bond.</p>
+        <p>A bond usually pays interest over its life and repays principal at maturity. The principal (also called face value, par value, or maturity value) is both the amount paid at maturity and the amount used to compute the cash interest payments.</p>
+        <p>The coupon rate is also called the stated rate, the contract rate, or the nominal rate. It is always stated as an annual rate. The cash interest payments are sometimes called coupon payments. The contract states whether they are annual, semiannual, or quarterly. When payments are more frequent than once a year, use the rate per period.</p>
+        <div class="table-wrap">
+          <table>
+            <caption style="caption-side:bottom;text-align:left;font-family:var(--serif);font-style:italic;color:var(--muted)">Face $1,000. Coupon rate 8%.</caption>
+            <thead><tr><th>Frequency</th><th>Rate per period</th><th class="num">Cash each period</th></tr></thead>
+            <tbody>
+              <tr><td>Annual</td><td>8% × 1 = 8%</td><td class="num">80</td></tr>
+              <tr><td>Semiannual</td><td>8% × 1/2 = 4%</td><td class="num">40</td></tr>
+              <tr><td>Quarterly</td><td>8% × 1/4 = 2%</td><td class="num">20</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>A smaller example on the slides: face $1,000, term 10 years, coupon 6% annual, interest paid semiannually. Cash each period = 1,000 × 6% × 1/2 = <strong>$30</strong>. There are 20 interest periods.</p>
+        <h3>Types named on the slide</h3>
+        <ul>
+          <li><strong>Unsecured bond (debenture)</strong> — no assets are pledged as a guarantee of repayment at maturity.</li>
+          <li><strong>Secured bond</strong> — specific assets are pledged.</li>
+          <li><strong>Callable bond</strong> — the issuer may retire the bonds early.</li>
+          <li><strong>Convertible bond</strong> — the holder may convert the bonds into shares of the issuer’s common stock.</li>
+        </ul>
+        <p>The slides define those features. They do not work the journal entries for a call or a conversion. Retirement entries in this chapter are at maturity only.</p>
+      </section>
+
+      <section class="section" id="price">
+        <h2>What determines the issue price</h2>
+        <p>The issuer does not set the selling price. The market does, using present value. The price is the present value of the principal (a single payment) plus the present value of the interest payments (an annuity), both discounted at the market interest rate. The market rate is also called the yield or the effective interest rate. It is the return investors demand for the risks of that bond.</p>
+        <p>As market interest rates rise, the price of a bond falls, and the reverse. The rates that matter for the accounting in this chapter are the coupon rate, which does not change, and the market rate on the day the bond is issued. Later changes in market rates change the bond’s market price. They do not change the interest accounting that was fixed at issue.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>On the issue date</th><th>Price</th><th>Why, in the slides’ words</th></tr></thead>
+            <tbody>
+              <tr><td>Market rate = coupon rate</td><td>Par (face)</td><td>The present value of the future cash flows equals face value.</td></tr>
+              <tr><td>Market rate &gt; coupon rate</td><td>Discount</td><td>Investors will not buy unless the price is reduced.</td></tr>
+              <tr><td>Market rate &lt; coupon rate</td><td>Premium</td><td>Investors will pay extra for a coupon that is higher than the rate they demand.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The running example is an Amazon issue on 1 January 2025. Face $100,000. Coupon 10%. Interest paid each 30 June and 31 December, so the cash coupon is 100,000 × 10% × 1/2 = <strong>$5,000</strong> every period. Maturity is 31 December 2026, which is 4 semiannual periods. Only the market rate changes across the three cases.</p>
+      </section>
+
+      <section class="section" id="par">
+        <h2>Bonds issued at par</h2>
+        <p>Investors pay $100,000, so the market rate equals the 10% coupon. Discount at the market rate per period, 10% / 2 = 5%, for 4 periods. The slide uses present-value tables and also shows Excel.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Table factors at 5%, n = 4</th><th class="num">Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Principal</td><td>100,000 × 0.82270</td><td class="num">82,270</td></tr>
+              <tr><td>Interest annuity</td><td>5,000 × 3.54595</td><td class="num">17,730</td></tr>
+              <tr class="total"><td>Issue price</td><td></td><td class="num">100,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Excel on the slide: PV(0.10/2, 4, , 100000) = 82,270.25 and PV(0.10/2, 4, 5000) = 17,729.75. Those unrounded pieces also add to 100,000. When the market rate equals the coupon rate, the present value always equals face value.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">100,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Bonds payable</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>1 January 2025.</caption>
+          </table>
+        </div>
+        <p>Each 30 June and 31 December the cash interest and the interest expense are the same $5,000. There is nothing to amortize.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest expense</td><td class="num">5,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">5,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="discount">
+        <h2>Bonds issued at a discount</h2>
+        <p>Same bond, but the market rate on the issue date is 12%. Because 10% is less than 12%, the bonds sell at a discount. Discount at 12% / 2 = 6% for 4 periods.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Table factors at 6%, n = 4</th><th class="num">Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Principal</td><td>100,000 × 0.79209</td><td class="num">79,209</td></tr>
+              <tr><td>Interest annuity</td><td>5,000 × 3.46511</td><td class="num">17,326</td></tr>
+              <tr class="total"><td>Issue price</td><td></td><td class="num">96,535</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Excel: PV(0.12/2, 4, , 100000) = 79,209.37 and PV(0.12/2, 4, 5000) = 17,325.53. The lecture uses the rounded issue price <strong>$96,535</strong>. Discount = 100,000 − 96,535 = <strong>3,465</strong>. Bond discount is a contra-liability. Book value = face − unamortized discount = 100,000 − 3,465 = 96,535 on the issue date.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">96,535</td><td class="num"></td></tr>
+              <tr><td class="acct">Bond discount</td><td class="num">3,465</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Bonds payable</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>1 January 2025. Bonds payable is credited at face, not at the cash received.</caption>
+          </table>
+        </div>
+        <p>Effective-interest amortization: interest expense uses the market rate on the beginning book value. Cash interest uses the coupon rate on face. The difference amortizes the discount and increases the book value toward face. The expense is larger than the cash payment because the market rate (12%) is above the coupon (10%).</p>
+        <div class="formula">
+          <p class="eq">Interest expense = beginning book value × market rate per period</p>
+          <p class="eq">Cash interest = face × coupon rate per period</p>
+          <p class="eq">Discount amortized = interest expense − cash interest</p>
+          <p class="eq">Ending book value = beginning book value + discount amortized</p>
+        </div>
+        <p>First half of 2025, from the slide: expense = 96,535 × (0.12 × 1/2) = 96,535 × 0.06 = <strong>5,792</strong>. Cash = 5,000. Amortization = 792. New book value = 96,535 + 792 = <strong>97,327</strong>.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest expense</td><td class="num">5,792</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Bond discount</td><td class="num"></td><td class="num">792</td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">5,000</td></tr>
+            </tbody>
+            <caption>30 June 2025. Crediting the discount reduces the contra-liability, so the net liability rises.</caption>
+          </table>
+        </div>
+        <p>Second half of 2025: expense = 97,327 × 0.06 = <strong>5,840</strong>. Cash = 5,000. Amortization = 840. Book value = 97,327 + 840 = <strong>98,167</strong>. The entry has the same shape, with 5,840, 840, and 5,000.</p>
+        <div class="table-wrap">
+          <table>
+            <caption style="caption-side:top;text-align:left;font-weight:650">Discount amortization schedule printed in the lecture</caption>
+            <thead>
+              <tr><th>Date</th><th class="num">Cash</th><th class="num">Interest expense</th><th class="num">Discount amortized</th><th class="num">Book value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1 Jan 2025</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">96,535</td></tr>
+              <tr><td>30 Jun 2025</td><td class="num">5,000</td><td class="num">5,792</td><td class="num">792</td><td class="num">97,327</td></tr>
+              <tr><td>31 Dec 2025</td><td class="num">5,000</td><td class="num">5,840</td><td class="num">840</td><td class="num">98,167</td></tr>
+              <tr><td>30 Jun 2026</td><td class="num">5,000</td><td class="num">5,890</td><td class="num">890</td><td class="num">99,057</td></tr>
+              <tr><td>31 Dec 2026</td><td class="num">5,000</td><td class="num">5,943</td><td class="num">943</td><td class="num">100,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Cash is a credit every period. Interest expense is a debit. Discount amortized is a credit to the discount account. Book value moves toward the $100,000 face value. At maturity the discount is fully amortized and book value equals face.</p>
+      </section>
+
+      <section class="section" id="premium">
+        <h2>Bonds issued at a premium</h2>
+        <p>Same bond, market rate 8% on the issue date. The coupon is higher than investors demand, so they pay a premium. Discount at 8% / 2 = 4% for 4 periods.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Table factors at 4%, n = 4</th><th class="num">Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Principal</td><td>100,000 × 0.85480</td><td class="num">85,480</td></tr>
+              <tr><td>Interest annuity</td><td>5,000 × 3.62990</td><td class="num">18,150</td></tr>
+              <tr class="total"><td>Issue price</td><td></td><td class="num">103,630</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Excel: PV(0.08/2, 4, , 100000) = 85,480.42 and PV(0.08/2, 4, 5000) = 18,149.48. The lecture uses <strong>$103,630</strong>. Premium = 103,630 − 100,000 = <strong>3,630</strong>. The premium is added to the liability. Book value = face + unamortized premium.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">103,630</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Bond premium</td><td class="num"></td><td class="num">3,630</td></tr>
+              <tr><td class="acct cr">Bonds payable</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>1 January 2025.</caption>
+          </table>
+        </div>
+        <p>Interest expense is now smaller than the cash coupon, because the market rate (8%) is below the coupon (10%). Amortizing the premium decreases book value toward face.</p>
+        <div class="formula">
+          <p class="eq">Premium amortized = cash interest − interest expense</p>
+          <p class="eq">Ending book value = beginning book value − premium amortized</p>
+        </div>
+        <p>First half of 2025: expense = 103,630 × (0.08 × 1/2) = 103,630 × 0.04 = <strong>4,145</strong>. Cash = 5,000. Premium amortized = 5,000 − 4,145 = <strong>855</strong>. Book value = 103,630 − 855 = <strong>102,775</strong>.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Interest expense</td><td class="num">4,145</td><td class="num"></td></tr>
+              <tr><td class="acct">Bond premium</td><td class="num">855</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">5,000</td></tr>
+            </tbody>
+            <caption>30 June 2025. Debiting the premium reduces the net liability.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption style="caption-side:top;text-align:left;font-weight:650">Premium amortization schedule printed in the lecture</caption>
+            <thead>
+              <tr><th>Date</th><th class="num">Cash</th><th class="num">Interest expense</th><th class="num">Premium amortized</th><th class="num">Book value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1 Jan 2025</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">103,630</td></tr>
+              <tr><td>30 Jun 2025</td><td class="num">5,000</td><td class="num">4,145</td><td class="num">855</td><td class="num">102,775</td></tr>
+              <tr><td>31 Dec 2025</td><td class="num">5,000</td><td class="num">4,111</td><td class="num">889</td><td class="num">101,886</td></tr>
+              <tr><td>30 Jun 2026</td><td class="num">5,000</td><td class="num">4,075</td><td class="num">925</td><td class="num">100,962</td></tr>
+              <tr><td>31 Dec 2026</td><td class="num">5,000</td><td class="num">4,038</td><td class="num">962</td><td class="num">100,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>102,775 × 0.04 = 4,111 exactly, and 102,775 − 889 = 101,886. The 30 June 2026 row on the slide prints book value 100,962. Strict subtraction of the printed amortization (101,886 − 925) is 100,961, so the printed schedule is one dollar away from that subtraction. Use the printed row, and use the last row as the plug that lands on face value: amortization 962 and book value 100,000. The slide’s point does not depend on that dollar: premium amortization reduces book value until it equals face.</p>
+        <div class="callout rule">
+          <strong class="label">Discount versus premium</strong>
+          Amortization of a discount increases the book value of the liability. Amortization of a premium decreases it. In both cases book value walks toward face, and at maturity the company pays face, not the original issue price.
+        </div>
+      </section>
+
+      <section class="section" id="retire">
+        <h2>Retirement at maturity</h2>
+        <p>Whether the bonds were issued at par, at a discount, or at a premium, the maturity entry is the same, because the premium or discount has been fully amortized and book value equals face. For the Amazon bonds:</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Bonds payable</td><td class="num">100,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">100,000</td></tr>
+            </tbody>
+            <caption>31 December 2026. This entry is the principal only. The last interest payment is its own entry, already included in the schedules.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="tie">
+        <h2>Times interest earned</h2>
+        <p>Analytical question: is the company generating enough from profit-making activities to meet its current interest obligations? Analysts prefer a high ratio. It shows income earned for each dollar of interest expense.</p>
+        <div class="formula">
+          <p class="eq">Times interest earned = (Net income + Interest expense + Income tax expense) ÷ Interest expense</p>
+        </div>
+        <p>Amazon, from the comparison box: 2021 = 22.09, 2022 = (1.51), 2023 = 12.80. The parentheses mark a negative ratio in 2022: earnings did not cover interest that year. The 2023 ratio of 12.80 means about $12.80 of pre-interest, pre-tax earnings per $1 of interest expense, using the formula as written. The slides do not give the underlying net income, interest, and tax amounts, so do not try to reverse-engineer them.</p>
+      </section>
+
+      <section class="section" id="traps">
+        <h2>Exam traps</h2>
+        <ul>
+          <li>Accounts payable turnover uses cost of goods sold. A higher turnover means fewer days to pay. Starbucks at 7.64 is 47.77 days, not 7.64 days.</li>
+          <li>A note that crosses the year-end needs an adjusting entry for the months already used. The 1 November note accrues $2,000 at 31 December, not $6,000, and not zero.</li>
+          <li>On 30 April, record the new interest expense before paying. The cash paid is 106,000. Interest expense on that day is only the 4,000 that belongs to the new year.</li>
+          <li>Warranty expense is recorded when the products are sold. The later repair debits the provision (or warranty liability), not warranty expense.</li>
+          <li>A probable loss that cannot be estimated is disclosed, not recorded. A remote loss is not disclosed, on this table, whether or not it can be estimated. A reasonably possible loss is disclosed in either estimation case.</li>
+          <li>The provision test in the early slides uses “more likely than not, greater than 50%.” The later table defines probable as “likely.” Do not silently swap them.</li>
+          <li>Only the principal portion of a mortgage payment reduces the liability. The first McGiven payment reduces the mortgage by 67.09, not by 733.76.</li>
+          <li>The current portion of a mortgage is next year’s principal, not next year’s total payments, and not the entire remaining balance.</li>
+          <li>Cash coupon interest uses face × coupon rate per period. Interest expense on a discount or premium uses beginning book value × market rate per period. They are equal only when the bond was issued at par.</li>
+          <li>Bonds payable is credited at face at issuance. The discount is a separate debit. The premium is a separate credit. Do not credit bonds payable for 96,535 or 103,630.</li>
+          <li>A discount is a contra-liability. Crediting it at each interest date increases book value. A premium is added to the liability. Debiting it decreases book value.</li>
+          <li>Use the market rate per period and the number of periods. For the Amazon bond that is 6%, 5%, or 4% for n = 4, not 12%, 10%, or 8% for n = 2.</li>
+          <li>The maturity payment is face value, $100,000, in all three cases. The last interest entry is separate.</li>
+          <li>Times interest earned adds back interest and income tax before dividing by interest. A negative ratio is possible and, in the Amazon box, is shown in parentheses.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="practice">
+        <h2>Practice</h2>
+        <div class="tools">
+          <button type="button" data-expand="open">Open all answers</button>
+          <button type="button" data-expand="close">Close all answers</button>
+        </div>
+        <details class="qa">
+          <summary>1. On 1 October a company borrows 60,000 for nine months at 8%. Year-end is 31 December. Principal and interest are paid at maturity. Give the 1 October, 31 December, and maturity entries.</summary>
+          <div class="answer">
+            <p>1 October: debit cash 60,000; credit notes payable 60,000. Interest for three months = 60,000 × 0.08 × 3/12 = 1,200. 31 December: debit interest expense 1,200; credit interest payable 1,200. Total interest = 60,000 × 0.08 × 9/12 = 3,600, so the remaining six months are 2,400. At maturity: debit interest expense 2,400; credit interest payable 2,400. Then debit interest payable 3,600; debit notes payable 60,000; credit cash 63,600.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>2. Sales this year are 400,000. Warranty costs are estimated at 3% of sales. During the year, repair parts of 7,500 are used. Give both entries and the ending warranty liability, assuming the liability started at zero.</summary>
+          <div class="answer">
+            <p>Estimate: debit warranty expense 12,000; credit warranty liability 12,000. Repair: debit warranty liability 7,500; credit supplies (or inventory) 7,500. Ending liability = 12,000 − 7,500 = <strong>4,500</strong>. Warranty expense stays 12,000.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>3. Classify each item using the lecture table. (a) A lawsuit that lawyers call probable, and they can estimate the loss. (b) The same lawsuit, but no reliable estimate is possible. (c) A guarantee that is reasonably possible and can be estimated. (d) A threat that management calls remote.</summary>
+          <div class="answer">
+            <p>(a) Record the liability. (b) Disclose in the footnotes; do not record a number. (c) Disclose in the footnotes; do not record. (d) No disclosure is required under the table, whether or not an amount could be estimated.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>4. A 100,000 face bond, coupon 8%, pays interest semiannually and has 4 periods left. It is issued when the market rate is 10% per year. Without present-value tables, state whether it is issued at par, a discount, or a premium, what the cash interest each period is, and the shape of the first interest entry.</summary>
+          <div class="answer">
+            <p>Market 10% is above the coupon 8%, so the bond is issued at a <strong>discount</strong>. Cash interest each period = 100,000 × 8% × 1/2 = <strong>4,000</strong>. The market rate per period is 5%. Interest expense = beginning book value × 5%, which is more than 4,000. Debit interest expense for that larger amount; credit bond discount for the difference; credit cash 4,000. Book value rises.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>5. Use the Amazon discount bond. Book value at 1 January 2025 is 96,535. Compute the 30 June 2025 interest entry. Then suppose instead the same face and coupon had been issued at 103,630 when the market rate was 8%. Compute the 30 June 2025 interest entry for that premium case.</summary>
+          <div class="answer">
+            <p>Discount: expense = 96,535 × 0.06 = 5,792. Debit interest expense 5,792; credit bond discount 792; credit cash 5,000. Book value becomes 97,327.</p>
+            <p>Premium: expense = 103,630 × 0.04 = 4,145. Debit interest expense 4,145; debit bond premium 855; credit cash 5,000. Book value becomes 102,775.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>6. Net income is 40,000, interest expense is 8,000, and income tax expense is 12,000. Compute times interest earned. What does a higher result mean?</summary>
+          <div class="answer">
+            <p>Times interest earned = (40,000 + 8,000 + 12,000) / 8,000 = 60,000 / 8,000 = <strong>7.5</strong>. The company earned $7.50, before interest and tax, for each $1 of interest. A higher ratio is viewed more favorably.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer">Chapter 8 follows the liabilities lecture: the November note, Sun Company’s warranty, the contingency table, the McGiven mortgage, and the Amazon bond at par, discount, and premium.</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

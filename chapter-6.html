@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 6 · Inventory · FA1 final</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Ch 5 Cash</a>
+      <a href="chapter-6.html">Ch 6 Inventory</a>
+      <a href="chapter-7.html">Ch 7 PPE</a>
+      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="layout">
+    <aside class="toc">
+      <strong>Chapter 6</strong>
+      <a href="#outcomes">Learning outcomes</a>
+      <a href="#nature">Nature of inventory</a>
+      <a href="#systems">Perpetual and periodic</a>
+      <a href="#shrink">Shrinkage</a>
+      <a href="#errors">Inventory errors</a>
+      <a href="#cost">What goes into cost</a>
+      <a href="#methods">Cost-flow methods</a>
+      <a href="#effects">Choosing a method</a>
+      <a href="#lcnrv">Lower of cost or NRV</a>
+      <a href="#ratios">Turnover and days</a>
+      <a href="#traps">Exam traps</a>
+      <a href="#practice">Practice</a>
+    </aside>
+    <div>
+      <section class="section" id="outcomes">
+        <p class="kicker">Chapter 6</p>
+        <h1>Inventory</h1>
+        <p>Learning outcomes printed on the first slide:</p>
+        <ul>
+          <li>Apply the cost principle to identify the amounts included in inventory and cost of goods sold for typical retailers, wholesalers, and manufacturers.</li>
+          <li>Report inventory and cost of goods sold using the four inventory costing methods.</li>
+          <li>Decide when the use of different inventory costing methods is beneficial to a company.</li>
+          <li>Report inventory at the lower of cost or net realizable value.</li>
+          <li>Understand methods for controlling inventory and analyze the effects of inventory errors on financial statements.</li>
+          <li>Evaluate inventory management using the inventory turnover ratio and analyze the effects of inventory on cash flows.</li>
+        </ul>
+        <p>The chapter map has five blocks: nature of inventory and cost of goods sold; inventory costing methods; lower of cost or NRV; control of inventory; evaluating inventory management.</p>
+      </section>
+
+      <section class="section" id="nature">
+        <h2>Why the inventory records exist</h2>
+        <p>The accounting system has three jobs in inventory management. It supplies numbers for periodic financial statements and tax returns. It supplies up-to-date quantities and costs for ordering and manufacturing. And, because inventory can be stolen or misused, it supplies the information needed to protect the asset.</p>
+        <p>Inventory is a current asset: it is normally used or turned into cash within one year or the next operating cycle.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Business</th><th>Inventory</th><th>What it is</th></tr></thead>
+            <tbody>
+              <tr><td>Merchandiser</td><td>Merchandise inventory</td><td>Goods held for resale in the normal course of business, usually bought in finished condition.</td></tr>
+              <tr><td>Manufacturer</td><td>Raw materials</td><td>Items acquired for processing. They stay in raw materials until used, then become part of work in process. Also called direct materials (DM).</td></tr>
+              <tr><td>Manufacturer</td><td>Work in process</td><td>Goods being manufactured and not yet complete. When complete, they become finished goods.</td></tr>
+              <tr><td>Manufacturer</td><td>Finished goods</td><td>Manufactured goods that are complete and ready for sale.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="systems">
+        <h2>Perpetual and periodic · Grantsville Clothing</h2>
+        <p>Same transactions, two sets of accounts. Under a perpetual system, inventory and cost of goods sold are updated as goods move. Under a periodic system, purchases, freight-in, purchase returns, and purchase discounts are temporary accounts. Cost of goods sold is computed only after a physical count. Grantsville, on the periodic system, would know total sales of $23,000 and would not know, from the accounts alone, how many shirts and pairs of pants had been sold.</p>
+        <ol>
+          <li>Purchased on account 1,000 shirts at $10 = $10,000.</li>
+          <li>Purchased on account 300 pairs of pants at $18 = $5,400.</li>
+          <li>Paid freight on the shirts, $970 cash.</li>
+          <li>Returned 30 stained shirts, cost $300.</li>
+          <li>Paid the shirt invoice inside the discount period. The bill is (1,000 − 30) × $10 = $9,700, terms 2/10, n/30, so the discount is $194 and cash paid is $9,506.</li>
+          <li>Paid the pants invoice of $5,400 after the discount period. No discount.</li>
+          <li>Sold 600 shirts on account at $25 = $15,000.</li>
+          <li>Sold 200 pairs of pants on account at $40 = $8,000.</li>
+        </ol>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Perpetual</th><th>Periodic</th></tr></thead>
+            <tbody>
+              <tr><td>a. Buy shirts</td><td>Dr Inventory 10,000<br>Cr Accounts payable 10,000</td><td>Dr Purchases 10,000<br>Cr Accounts payable 10,000</td></tr>
+              <tr><td>b. Buy pants</td><td>Dr Inventory 5,400<br>Cr Accounts payable 5,400</td><td>Dr Purchases 5,400<br>Cr Accounts payable 5,400</td></tr>
+              <tr><td>c. Freight</td><td>Dr Inventory 970<br>Cr Cash 970</td><td>Dr Freight-in 970<br>Cr Cash 970</td></tr>
+              <tr><td>d. Return</td><td>Dr Accounts payable 300<br>Cr Inventory 300</td><td>Dr Accounts payable 300<br>Cr Purchase returns 300</td></tr>
+              <tr><td>e. Pay shirts</td><td>Dr Accounts payable 9,700<br>Cr Inventory 194<br>Cr Cash 9,506</td><td>Dr Accounts payable 9,700<br>Cr Purchase discounts 194<br>Cr Cash 9,506</td></tr>
+              <tr><td>f. Pay pants</td><td>Dr Accounts payable 5,400<br>Cr Cash 5,400</td><td>Same payable and cash entry. No discount account.</td></tr>
+              <tr><td>g. Sell shirts</td><td>Dr Accounts receivable 15,000<br>Cr Sales 15,000<br>Dr Cost of goods sold 6,000<br>Cr Inventory 6,000<br>(600 × $10)</td><td>Dr Accounts receivable 15,000<br>Cr Sales 15,000<br>No cost entry at the time of sale.</td></tr>
+              <tr><td>h. Sell pants</td><td>Dr Accounts receivable 8,000<br>Cr Sales 8,000<br>Dr Cost of goods sold 3,600<br>Cr Inventory 3,600<br>(200 × $18)</td><td>Dr Accounts receivable 8,000<br>Cr Sales 8,000<br>No cost entry at the time of sale.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Periodic closing</h3>
+        <p>Net purchases = purchases + freight-in − purchase returns − purchase discounts.</p>
+        <div class="formula">
+          <p class="eq">Purchases = 10,000 + 5,400 = 15,400</p>
+          <p class="eq">Net purchases = 15,400 + 970 − 300 − 194 = 15,876</p>
+        </div>
+        <p>Step 1 closes the temporary purchasing accounts into Inventory.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Inventory</td><td class="num">15,876</td><td class="num"></td></tr>
+              <tr><td class="acct">Purchase returns</td><td class="num">300</td><td class="num"></td></tr>
+              <tr><td class="acct">Purchase discounts</td><td class="num">194</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Purchases</td><td class="num"></td><td class="num">15,400</td></tr>
+              <tr><td class="acct cr">Freight-in</td><td class="num"></td><td class="num">970</td></tr>
+            </tbody>
+            <caption>Beginning inventory in this illustration is zero, so Inventory now stands at 15,876.</caption>
+          </table>
+        </div>
+        <p>Step 2 reduces Inventory to the physical count and recognizes cost of goods sold. The slide first uses a year-end count of $6,776:</p>
+        <div class="formula">
+          <p class="eq">Cost of goods sold = 15,876 − 6,776 = 9,100</p>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">9,100</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Inventory</td><td class="num"></td><td class="num">9,100</td></tr>
+            </tbody>
+            <caption>A physical count is the only way the periodic system gets cost of goods sold.</caption>
+          </table>
+        </div>
+        <div class="callout note">
+          <strong class="label">The $500 labeled (i) on the slide</strong>
+          Transactions (a) through (h) alone leave perpetual inventory at 10,000 + 5,400 + 970 − 300 − 194 − 6,000 − 3,600 = $6,276, and cost of goods sold at 6,000 + 3,600 = $9,600. The lecture’s T-account then shows an extra item (i): debit Inventory $500, credit Cost of goods sold $500. The slides never say what (i) is. Every later balance in the illustration uses the T-account totals: inventory $6,776 and cost of goods sold $9,100. If you recompute from (a)–(h) only, you will be $500 away from those printed balances. Follow (a)–(h) when the question lists only those events. Use 6,776 and 9,100 when the question is about the shrinkage illustration that starts from those balances.
+        </div>
+      </section>
+
+      <section class="section" id="shrink">
+        <h2>Inventory shrinkage</h2>
+        <p>A physical count of Grantsville’s goods comes to $5,950. The perpetual records say $6,776. The difference is goods lost or stolen.</p>
+        <div class="formula">
+          <p class="eq">Shrinkage = 6,776 − 5,950 = 826</p>
+        </div>
+        <p>Perpetual system: the count tells you the shrinkage, and you record it.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">826</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Inventory</td><td class="num"></td><td class="num">826</td></tr>
+            </tbody>
+            <caption>Perpetual cost of goods sold becomes 9,100 + 826 = 9,926.</caption>
+          </table>
+        </div>
+        <p>Periodic system: there is no separate shrinkage entry, because the amount lost is unknown. The physical count of $5,950 is simply the ending inventory, so cost of goods sold absorbs the loss.</p>
+        <div class="formula">
+          <p class="eq">Cost of goods sold = 15,876 − 5,950 = 9,926</p>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">9,926</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Inventory</td><td class="num"></td><td class="num">9,926</td></tr>
+            </tbody>
+            <caption>Brings Inventory from the 15,876 net-purchases balance down to the count of 5,950.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">Periodic</th><th class="num">Perpetual</th></tr></thead>
+            <tbody>
+              <tr><td>Beginning inventory</td><td class="num">0</td><td class="num">0</td></tr>
+              <tr><td>Net purchases</td><td class="num">15,876</td><td class="num">15,876</td></tr>
+              <tr><td>Cost of goods available</td><td class="num">15,876</td><td class="num">15,876</td></tr>
+              <tr><td>Ending inventory</td><td class="num">5,950</td><td class="num">6,776</td></tr>
+              <tr><td>Cost of goods sold</td><td class="num">9,926</td><td class="num">9,100</td></tr>
+              <tr><td>Goods lost or stolen</td><td class="num">unknown</td><td class="num">826</td></tr>
+              <tr class="total"><td>Sold, lost, or stolen</td><td class="num">9,926</td><td class="num">9,926</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="errors">
+        <h2>Ending-inventory errors · Salina Corporation</h2>
+        <p>The cost-of-goods-sold equation is the whole analysis:</p>
+        <div class="formula">
+          <p class="eq">Beginning inventory + net purchases − ending inventory = cost of goods sold</p>
+        </div>
+        <p>Correct data on the slide:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">2016</th><th class="num">2017</th></tr></thead>
+            <tbody>
+              <tr><td>Sales revenue</td><td class="num">50,000</td><td class="num">40,000</td></tr>
+              <tr><td>Beginning inventory</td><td class="num">10,000</td><td class="num">5,000</td></tr>
+              <tr><td>Net purchases</td><td class="num">20,000</td><td class="num">25,000</td></tr>
+              <tr><td>Goods available</td><td class="num">30,000</td><td class="num">30,000</td></tr>
+              <tr><td>Ending inventory</td><td class="num">5,000</td><td class="num">10,000</td></tr>
+              <tr><td>Cost of goods sold</td><td class="num">25,000</td><td class="num">20,000</td></tr>
+              <tr><td>Gross margin</td><td class="num">25,000</td><td class="num">20,000</td></tr>
+              <tr><td>Operating expenses</td><td class="num">10,000</td><td class="num">10,000</td></tr>
+              <tr class="total"><td>Net income</td><td class="num">15,000</td><td class="num">10,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Suppose 2016 ending inventory is overstated by $2,000 (reported as $7,000). Cost of goods sold is then understated by $2,000 (23,000 instead of 25,000), gross margin is 27,000, and net income is 17,000, overstated by $2,000. The balance sheet inventory and retained earnings are also too high by $2,000 at the end of 2016.</p>
+        <p>That overstatement becomes 2017’s beginning inventory. Beginning inventory and goods available are each $2,000 too high (7,000 and 32,000). Net purchases stay 25,000. Cost of goods sold is 22,000 instead of 20,000, and net income is 8,000 instead of 10,000. The second year is understated by the same $2,000. Over the two years the income errors cancel if 2017 ending inventory is correct.</p>
+        <div class="callout trap">
+          <strong class="label">Read the slide’s side note against its table</strong>
+          The green side note says the 2017 effect is “$2,000 overstated net purchases.” The numerical table does not change net purchases. It changes beginning inventory and goods available for sale. Use the equation. An overstated beginning inventory overstates cost of goods sold. It does not restate purchases.
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Error in ending inventory</th><th>This year’s COGS</th><th>This year’s income</th><th>Next year’s COGS</th><th>Next year’s income</th></tr></thead>
+            <tbody>
+              <tr><td>Overstated</td><td>Understated</td><td>Overstated</td><td>Overstated</td><td>Understated</td></tr>
+              <tr><td>Understated</td><td>Overstated</td><td>Understated</td><td>Understated</td><td>Overstated</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Cash is not miscounted by an inventory error of this kind. Income and the inventory asset are. That is the cash-flow point attached to this error: the accounting income moves, the cash collected from customers does not.</p>
+      </section>
+
+      <section class="section" id="cost">
+        <h2>What cost includes, and how it flows</h2>
+        <p>Goods are first recorded at cost. Cost includes the invoice price plus other expenditures to get the goods ready, such as freight-in and inspection and preparation costs. Purchase returns, allowances, and purchase discounts are subtracted.</p>
+        <p>For a merchandiser, the purchase increases inventory (or Purchases, if periodic). The sale increases cost of goods sold and decreases inventory.</p>
+        <div class="formula">
+          <p class="eq">Cost of goods sold = beginning inventory + purchases − ending inventory</p>
+        </div>
+        <p>Harley-Davidson illustration for Motorclothes: beginning inventory $40,000, purchases $55,000, ending inventory $35,000. Cost of goods sold = 40,000 + 55,000 − 35,000 = <strong>$60,000</strong>.</p>
+        <h3>Manufacturer flow</h3>
+        <ol>
+          <li>Buy raw materials: debit raw materials inventory, credit cash or accounts payable.</li>
+          <li>Use them. Direct materials, direct labor, and factory overhead move into work in process. Direct labor is the earnings of employees who work directly on the product. Factory overhead is all other manufacturing cost. Debit work in process; credit raw materials, cash or wages payable, and supplies (overhead).</li>
+          <li>Finish the goods: debit finished goods, credit work in process.</li>
+          <li>Sell them: debit cost of goods sold, credit finished goods. The same equation still computes cost of goods sold.</li>
+        </ol>
+      </section>
+
+      <section class="section" id="methods">
+        <h2>Four costing methods</h2>
+        <p>The four methods on the slide are specific identification, first-in first-out (FIFO), last-in first-out (LIFO), and average cost. The choice is a <strong>cost-flow assumption</strong>. It is not a description of which physical unit left the shelf.</p>
+        <ul>
+          <li><strong>Specific identification</strong> tracks the purchase cost of each item. It is impractical when large quantities of similar items are stocked. The slides give no numerical example.</li>
+          <li><strong>FIFO</strong> treats the earliest goods purchased as the first goods sold. Oldest unit costs go to cost of goods sold. Newest unit costs stay in ending inventory.</li>
+          <li><strong>LIFO</strong> does the reverse: newest costs go to cost of goods sold, oldest costs stay in ending inventory. <strong>IFRS does not allow LIFO.</strong> The comparison table prints a LIFO column and then crosses the heading out for that reason. The arithmetic is still in the chapter, so it is below.</li>
+          <li><strong>Average cost</strong> uses one weighted-average unit cost for both cost of goods sold and ending inventory.</li>
+        </ul>
+        <div class="formula">
+          <p class="eq">Weighted average unit cost = Cost of goods available for sale ÷ Number of units available for sale</p>
+        </div>
+        <h3>The lecture’s seven units</h3>
+        <p>Beginning inventory 2 units at $70. Purchases 4 units at $80 and 1 unit at $100. Goods available: 7 units, cost $560. Four units are sold, so three remain.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>FIFO</th><th>LIFO</th><th>Average</th></tr></thead>
+            <tbody>
+              <tr><td>Goods available</td><td>2×70 + 4×80 + 1×100 = 560</td><td>560</td><td>560 ÷ 7 = $80</td></tr>
+              <tr><td>Ending inventory (3)</td><td>2×80 + 1×100 = <strong>260</strong></td><td>2×70 + 1×80 = <strong>220</strong></td><td>3 × 80 = <strong>240</strong></td></tr>
+              <tr><td>Cost of goods sold (4)</td><td>2×70 + 2×80 = <strong>300</strong></td><td>1×100 + 3×80 = <strong>340</strong></td><td>4 × 80 = <strong>320</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>FIFO and average are computed step by step on the slides. LIFO is not given its own computation panel; the income-statement comparison reports LIFO cost of goods sold of $340 and inventory of $220, which is this assignment of the same units. Check each column: ending inventory + cost of goods sold = 560.</p>
+      </section>
+
+      <section class="section" id="effects">
+        <h2>Financial-statement effects and the manager’s choice</h2>
+        <p>Same sales, same other expenses, tax at 25%. Costs in the example are rising ($70, then $80, then $100), so FIFO puts the cheap units in cost of goods sold.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">FIFO</th><th class="num">LIFO</th><th class="num">Average</th></tr></thead>
+            <tbody>
+              <tr><td>Sales</td><td class="num">480</td><td class="num">480</td><td class="num">480</td></tr>
+              <tr><td>Cost of goods sold</td><td class="num">300</td><td class="num">340</td><td class="num">320</td></tr>
+              <tr><td>Gross profit</td><td class="num">180</td><td class="num">140</td><td class="num">160</td></tr>
+              <tr><td>Other expenses</td><td class="num">80</td><td class="num">80</td><td class="num">80</td></tr>
+              <tr><td>Income before tax</td><td class="num">100</td><td class="num">60</td><td class="num">80</td></tr>
+              <tr><td>Income tax expense (25%)</td><td class="num">25</td><td class="num">15</td><td class="num">20</td></tr>
+              <tr class="total"><td>Net income</td><td class="num">75</td><td class="num">45</td><td class="num">60</td></tr>
+              <tr class="total"><td>Inventory (balance sheet)</td><td class="num">260</td><td class="num">220</td><td class="num">240</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Managers in the slides choose a method for two reasons:</p>
+        <ol>
+          <li><strong>Net income.</strong> Managers prefer to report higher earnings. In this rising-cost example, FIFO reports the highest income ($75) and the highest inventory.</li>
+          <li><strong>Income tax,</strong> the “least–latest” rule. Managers prefer to pay the smallest tax the law allows, as late as possible. In this example LIFO reports the lowest tax ($15). IFRS removes that option by prohibiting LIFO.</li>
+        </ol>
+        <p>If prices were falling, the income ranking would reverse. The slides do not work a falling-price case; they work this one.</p>
+        <p>Cash paid to suppliers does not depend on the cost-flow assumption. The method changes cost of goods sold, income, tax, and the inventory asset. The cash-flow effect of the choice runs through the tax payment, not through the supplier payment.</p>
+      </section>
+
+      <section class="section" id="lcnrv">
+        <h2>Lower of cost or net realizable value</h2>
+        <p>Inventory starts at purchase cost, under the cost principle. If net realizable value falls below cost, the units are reported at NRV. The loss is recognized in the period the value drops, not in the period the item is sold. The slides tie that departure from cost to the conservatism constraint: take care not to overstate assets and income.</p>
+        <div class="formula">
+          <p class="eq">NRV = sales price − costs to sell</p>
+          <p class="eq">Report the lower of cost and NRV, item by item in the lecture examples</p>
+        </div>
+        <p>Check-your-understanding solution printed on the slide. Report historical cost when it is lower, and NRV when cost is higher.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th class="num">Historical cost</th><th class="num">NRV</th><th class="num">Report</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td class="num">31</td><td class="num">38</td><td class="num">31</td></tr>
+              <tr><td>B</td><td class="num">17</td><td class="num">21</td><td class="num">17</td></tr>
+              <tr><td>C</td><td class="num">22</td><td class="num">25</td><td class="num">22</td></tr>
+              <tr><td>D</td><td class="num">46</td><td class="num">45</td><td class="num">45</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>HP ending inventory</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th class="num">Qty</th><th class="num">Cost</th><th class="num">NRV</th><th class="num">Lower</th><th class="num">Total</th></tr></thead>
+            <tbody>
+              <tr><td>Notebooks</td><td class="num">1,000</td><td class="num">250</td><td class="num">200</td><td class="num">200</td><td class="num">200,000</td></tr>
+              <tr><td>Printers</td><td class="num">400</td><td class="num">100</td><td class="num">110</td><td class="num">100</td><td class="num">40,000</td></tr>
+              <tr class="total"><td>Inventory at LCNRV</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">240,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Only the notebooks are written down: 1,000 × (250 − 200) = 50,000. The write-down is added to cost of goods sold. The credit is an allowance, a contra-account to inventory, not a direct credit to the inventory asset in this lecture.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">50,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Allowance for inventory write-down</td><td class="num"></td><td class="num">50,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Demonstrator car</h3>
+        <p>Cost $18,000. It can now be sold for $16,000, and a $500 commission must be paid to sell it. NRV = 16,000 − 500 = $15,500. Loss = 18,000 − 15,500 = $2,500.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">2,500</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Allowance for inventory write-down</td><td class="num"></td><td class="num">2,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The chapter exercise asks for lower of cost or NRV applied on an item-by-item basis. Do not offset a gain on one item against a loss on another. Printers stay at cost even though their NRV is higher; the notebooks still take the full write-down.</p>
+      </section>
+
+      <section class="section" id="ratios">
+        <h2>Inventory turnover and days’ sales in inventory</h2>
+        <p>Analytical question: how efficient are inventory management activities? The ratio is how many times average inventory was produced and sold during the period. A higher ratio means inventory moves faster to the customer, which cuts storage and obsolescence costs.</p>
+        <div class="formula">
+          <p class="eq">Inventory turnover = Cost of goods sold ÷ Average inventory</p>
+          <p class="eq">Average inventory = (Beginning inventory + Ending inventory) ÷ 2</p>
+          <p class="eq">Number of days’ sales in inventory = 365 ÷ Inventory turnover</p>
+        </div>
+        <p>Days’ sales in inventory is the average time to produce and deliver inventory to customers. The slide’s comparison:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">Sears</th><th class="num">Costco</th><th class="num">Caterpillar</th></tr></thead>
+            <tbody>
+              <tr><td>Cost of goods sold</td><td class="num">19,336</td><td class="num">101,065</td><td class="num">33,742</td></tr>
+              <tr><td>Beginning inventory</td><td class="num">4,943</td><td class="num">8,456</td><td class="num">12,205</td></tr>
+              <tr><td>Ending inventory</td><td class="num">5,172</td><td class="num">8,908</td><td class="num">9,700</td></tr>
+              <tr><td>Average inventory</td><td class="num">5,058</td><td class="num">8,682</td><td class="num">10,953</td></tr>
+              <tr class="total"><td>Inventory turnover</td><td class="num">3.82</td><td class="num">11.64</td><td class="num">3.08</td></tr>
+              <tr class="total"><td>Days’ sales in inventory</td><td class="num">95.6</td><td class="num">31.4</td><td class="num">118.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The slide reads Caterpillar’s 118.5 days as inventory moving more slowly through production to the consumer. Costco turns inventory much faster. Compare within a similar business; a manufacturer and a retailer will not share one “good” number.</p>
+      </section>
+
+      <section class="section" id="traps">
+        <h2>Exam traps</h2>
+        <ul>
+          <li>Perpetual purchase returns and purchase discounts reduce Inventory. Periodic returns and discounts go to Purchase returns and Purchase discounts. Freight is Inventory under perpetual and Freight-in under periodic.</li>
+          <li>Periodic systems do not record cost of goods sold on the day of sale. Forgetting the second perpetual entry (the cost entry) is equally common.</li>
+          <li>The $194 shirt discount is 2% of $9,700, the amount after the return, not 2% of the original $10,000.</li>
+          <li>Shrinkage gets its own entry only in a perpetual system. In a periodic system it is buried inside cost of goods sold.</li>
+          <li>An ending-inventory error reverses next year. It does not permanently raise income, and it does not change net purchases in the Salina table.</li>
+          <li>FIFO and LIFO describe cost flow, not the physical pile. You can sell the newest unit and still use FIFO.</li>
+          <li>IFRS does not allow LIFO. If the question is under IFRS, FIFO or average are the available assumptions from this chapter. The printed LIFO column is crossed out for that reason.</li>
+          <li>Weighted average uses units available, not units sold, as the denominator. Then that one unit cost is applied to both the units sold and the units left.</li>
+          <li>NRV is selling price minus costs to sell, not selling price alone. The car’s NRV is 15,500, not 16,000.</li>
+          <li>Do not write inventory up when NRV exceeds cost. Items A, B, and C stay at historical cost. Only D is reduced.</li>
+          <li>The write-down in this chapter debits cost of goods sold and credits an allowance, a contra-inventory account.</li>
+          <li>Turnover uses cost of goods sold, not sales. Days on hand uses 365 ÷ turnover, not turnover ÷ 365.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="practice">
+        <h2>Practice</h2>
+        <div class="tools">
+          <button type="button" data-expand="open">Open all answers</button>
+          <button type="button" data-expand="close">Close all answers</button>
+        </div>
+        <details class="qa">
+          <summary>1. Beginning inventory is 10 units at $4. Purchases are 20 units at $5 and 10 units at $7. Sales are 25 units. Compute ending inventory and cost of goods sold under FIFO, LIFO, and weighted average.</summary>
+          <div class="answer">
+            <p>Units available = 40. Cost available = 40 + 100 + 70 = 210. Ending units = 15.</p>
+            <p>FIFO ending = 10×7 + 5×5 = 70 + 25 = <strong>95</strong>. COGS = 210 − 95 = <strong>115</strong> (10×4 + 15×5).</p>
+            <p>LIFO ending = 10×4 + 5×5 = 40 + 25 = <strong>65</strong>. COGS = 210 − 65 = <strong>145</strong> (10×7 + 15×5).</p>
+            <p>Average unit cost = 210 / 40 = 5.25. Ending = 15 × 5.25 = <strong>78.75</strong>. COGS = 25 × 5.25 = <strong>131.25</strong>.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>2. Three items, item by item. A: cost 40, selling price 50, cost to sell 6. B: cost 20, selling price 22, cost to sell 1. C: cost 15, selling price 14, cost to sell 0. What inventory total is reported, and what is the write-down entry?</summary>
+          <div class="answer">
+            <p>NRV: A = 50 − 6 = 44, so report 40. B = 22 − 1 = 21, so report 20. C = 14, so report 14. Total = <strong>74</strong>. Cost was 75, so the write-down is 1. Debit cost of goods sold 1; credit allowance for inventory write-down 1. A is not written up from 40 to 44.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>3. Ending inventory of year 1 is understated by 3,000. Purchases and sales are otherwise correct, and year 2 ending inventory is correct. What happens to cost of goods sold and net income in each year?</summary>
+          <div class="answer">
+            <p>Year 1: COGS overstated 3,000, net income understated 3,000. Year 2: beginning inventory understated 3,000, COGS understated 3,000, net income overstated 3,000. The two income errors offset. Net purchases are unchanged in both years.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>4. A perpetual inventory record shows $48,000. The physical count is $46,400. Give the shrinkage entry. What entry would a periodic system make for the same shortage?</summary>
+          <div class="answer">
+            <p>Perpetual: debit cost of goods sold 1,600; credit inventory 1,600. Periodic: no shrinkage entry. The count of 46,400 is ending inventory, and the shortage is inside the single cost-of-goods-sold computation (goods available − 46,400).</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>5. Cost of goods sold is 420,000. Beginning inventory 70,000. Ending inventory 90,000. Compute turnover and days’ sales in inventory.</summary>
+          <div class="answer">
+            <p>Average inventory = (70,000 + 90,000) / 2 = 80,000. Turnover = 420,000 / 80,000 = <strong>5.25</strong> times. Days = 365 / 5.25 = <strong>69.5 days</strong>.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer">Chapter 6 follows the inventory lecture, including the Grantsville entries, the Salina error table, the seven-unit cost-flow example, and the LCNRV write-downs.</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 7 · PPE and intangibles · FA1 final</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Ch 5 Cash</a>
+      <a href="chapter-6.html">Ch 6 Inventory</a>
+      <a href="chapter-7.html">Ch 7 PPE</a>
+      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="layout">
+    <aside class="toc">
+      <strong>Chapter 7</strong>
+      <a href="#outcomes">Learning outcomes</a>
+      <a href="#nature">Long-lived assets</a>
+      <a href="#acquire">Acquisition cost</a>
+      <a href="#repairs">Repairs and improvements</a>
+      <a href="#concepts">Depreciation concepts</a>
+      <a href="#methods">Three methods</a>
+      <a href="#intangibles">Intangibles</a>
+      <a href="#impairment">Impairment</a>
+      <a href="#report">Reporting</a>
+      <a href="#disposal">Disposals</a>
+      <a href="#cash">Cash flows</a>
+      <a href="#traps">Exam traps</a>
+      <a href="#practice">Practice</a>
+    </aside>
+    <div>
+      <section class="section" id="outcomes">
+        <p class="kicker">Chapter 7</p>
+        <h1>Property, plant, and equipment, and intangibles</h1>
+        <p>Learning outcomes printed on the first slide:</p>
+        <ul>
+          <li>Define, classify, and explain the nature of long-lived productive assets and interpret the fixed asset turnover ratio.</li>
+          <li>Apply the cost principle to measure the acquisition and maintenance of property, plant, and equipment.</li>
+          <li>Apply various cost allocation methods as assets are held and used over time.</li>
+          <li>Explain the effect of asset impairment on the financial statements.</li>
+          <li>Analyze the disposal of property, plant, and equipment.</li>
+          <li>Apply measurement and reporting concepts for intangible assets.</li>
+          <li>Explain how the acquisition, use, and disposal of long-lived assets affect cash flows.</li>
+        </ul>
+        <p>The chapter map also names natural resources. The slides do not teach depletion, so this page does not add a depletion section. Fixed asset turnover is named in the outcomes and is not computed in the deck; the formula is on the <a href="formulas.html#fat">formula sheet</a> with that limitation stated.</p>
+      </section>
+
+      <section class="section" id="nature">
+        <h2>Long-lived assets</h2>
+        <p>Long-lived assets are noncurrent. They are tangible or intangible.</p>
+        <ul>
+          <li><strong>Tangible assets</strong> have physical substance. They can be touched. Land, buildings, equipment.</li>
+          <li><strong>Intangible assets</strong> have no physical substance and give the owner specific rights. Patents, trademarks, licenses, goodwill.</li>
+        </ul>
+        <p>The operating cycle on the slides is: evaluate possible acquisitions, acquire the asset, estimate and recognize periodic depreciation or amortization, monitor value for impairment, and dispose of the asset.</p>
+        <p>Except for land, which is treated as having an unlimited life, a long-lived asset with a limited life is the prepaid cost of a bundle of future services. The expense-recognition (matching) principle puts a portion of that cost in the same periods as the revenues the asset helps earn. That allocation is depreciation for tangible assets and amortization for definite-life intangibles.</p>
+      </section>
+
+      <section class="section" id="acquire">
+        <h2>Acquisition cost</h2>
+        <p>Under the cost principle, all reasonable and necessary expenditures to acquire the asset and prepare it for use are part of the asset’s cost. The slides list sales taxes, legal fees, transportation, and installation. Those amounts are <strong>capitalized</strong>. They are not expenses of the current period.</p>
+        <div class="callout rule">
+          <strong class="label">Interest on a purchase</strong>
+          Interest charges associated with the purchase are recorded as expenses as incurred. This chapter does not capitalize borrowing costs into the asset.
+        </div>
+        <h3>Wheeler’s delivery truck</h3>
+        <p>Purchase price £15,000, less a 2% discount for paying cash, plus sales tax of £396. Cost = (15,000 × 0.98) + 396 = 14,700 + 396 = <strong>£15,096</strong>. The cash discount reduces the asset. The sales tax increases it.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Truck</td><td class="num">15,096</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">15,096</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>If £12,000 of the price is borrowed, the asset is still recorded at 15,096. Only the credit side changes: credit debt 12,000 and credit cash 3,096.</p>
+        <h3>Lump-sum land and building</h3>
+        <p>Wheeler buys a 40,000-square-foot building on 2.6 acres for £3,600,000. An appraisal gives the land a fair value of £1,000,000 and the building £3,000,000. Total fair value is £4,000,000. Allocate the lump-sum cost by those percentages.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Asset</th><th class="num">Fair value</th><th class="num">Percent</th><th class="num">Cost assigned</th></tr></thead>
+            <tbody>
+              <tr><td>Land</td><td class="num">1,000,000</td><td class="num">25%</td><td class="num">900,000</td></tr>
+              <tr><td>Building</td><td class="num">3,000,000</td><td class="num">75%</td><td class="num">2,700,000</td></tr>
+              <tr class="total"><td>Total</td><td class="num">4,000,000</td><td class="num">100%</td><td class="num">3,600,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>0.25 × 3,600,000 = 900,000. 0.75 × 3,600,000 = 2,700,000. Land is not later depreciated. The building is.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Land</td><td class="num">900,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Building</td><td class="num">2,700,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">3,600,000</td></tr>
+            </tbody>
+            <caption>All cash. If only £1,000,000 is paid in cash, credit cash 1,000,000 and credit note payable 2,600,000. The debit amounts do not change.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="repairs">
+        <h2>Repairs, maintenance, and improvements</h2>
+        <p>Spending after acquisition is classified in one of two ways. The line is often a judgment.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Ordinary repairs and maintenance</th><th>Improvements</th></tr></thead>
+            <tbody>
+              <tr><td>What they do</td><td>Keep the asset’s productive capacity for the current period only.</td><td>Increase productive life, operating efficiency, or capacity.</td></tr>
+              <tr><td>Accounting</td><td>Expense now.</td><td>Capital expenditure. Add to the asset account.</td></tr>
+              <tr><td>Immediate effect</td><td>Higher expenses, lower taxes now.</td><td>Higher assets and higher net income in the current year.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="concepts">
+        <h2>Depreciation concepts</h2>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Depreciation expense</td><td class="num">XX</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accumulated depreciation</td><td class="num"></td><td class="num">XX</td></tr>
+            </tbody>
+            <caption>Accumulated depreciation is a contra-account of the related asset. It is not cash, and it is not a fund set aside to replace the asset.</caption>
+          </table>
+        </div>
+        <p>Three inputs, once cost is known:</p>
+        <ol>
+          <li>Estimated useful life to <em>this</em> company.</li>
+          <li>Estimated residual value (salvage value) at the end of that life.</li>
+          <li>The depreciation method.</li>
+        </ol>
+        <p>Different lives and residual values change reported profit, so two companies with similar assets can look different only because of these estimates. Land is not depreciated.</p>
+        <div class="formula">
+          <p class="eq">Depreciable cost = Cost − residual value</p>
+          <p class="eq">Net book value (carrying amount) = Cost − accumulated depreciation</p>
+        </div>
+      </section>
+
+      <section class="section" id="methods">
+        <h2>Three methods · the delivery van</h2>
+        <p>The worked schedules use a van that cost $62,500, with residual value $2,500, so depreciable cost is $60,000. Useful life is 3 years, ending 31 May. Estimated activity is 100,000 miles. One slide callout prints “Cost = $60,000” next to “depreciation expense = $20,000.” The schedule itself shows acquisition cost of $62,500 and depreciable cost of $60,000. Use the schedule: cost 62,500, residual 2,500.</p>
+        <h3>Straight-line</h3>
+        <p>Used when no other method matches revenue and expense better. An equal portion of depreciable cost is allocated to each period.</p>
+        <div class="formula">
+          <p class="eq">(Cost − residual value) × 1 / useful life = depreciation expense</p>
+          <p class="eq">(62,500 − 2,500) × 1/3 = 20,000 per year</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Year ending</th><th>Computation</th><th class="num">Expense</th><th class="num">Accumulated</th><th class="num">Book value</th></tr></thead>
+            <tbody>
+              <tr><td>1 Jun 2026</td><td>Cost at acquisition</td><td class="num">0</td><td class="num">0</td><td class="num">62,500</td></tr>
+              <tr><td>31 May 2027</td><td>(62,500 − 2,500) × 1/3</td><td class="num">20,000</td><td class="num">20,000</td><td class="num">42,500</td></tr>
+              <tr><td>31 May 2028</td><td>same</td><td class="num">20,000</td><td class="num">40,000</td><td class="num">22,500</td></tr>
+              <tr><td>31 May 2029</td><td>same</td><td class="num">20,000</td><td class="num">60,000</td><td class="num">2,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Book value ends at residual value.</p>
+        <h3>Units of production</h3>
+        <p>Depreciable cost is spread over estimated total output. Expense varies with actual use, so it tracks revenue when activity varies. It is a variable expense.</p>
+        <div class="formula">
+          <p class="eq">Unit rate = (Cost − residual) ÷ estimated total units</p>
+          <p class="eq">(62,500 − 2,500) / 100,000 miles = $0.60 per mile</p>
+          <p class="eq">Depreciation = unit rate × actual units this period</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Year ending</th><th>Miles</th><th class="num">Expense</th><th class="num">Accumulated</th><th class="num">Book value</th></tr></thead>
+            <tbody>
+              <tr><td>1 Jun 2026</td><td>Cost</td><td class="num">0</td><td class="num">0</td><td class="num">62,500</td></tr>
+              <tr><td>31 May 2027</td><td>0.60 × 30,000</td><td class="num">18,000</td><td class="num">18,000</td><td class="num">44,500</td></tr>
+              <tr><td>31 May 2028</td><td>0.60 × 50,000</td><td class="num">30,000</td><td class="num">48,000</td><td class="num">14,500</td></tr>
+              <tr><td>31 May 2029</td><td>0.60 × 20,000</td><td class="num">12,000</td><td class="num">60,000</td><td class="num">2,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Miles total 100,000. Accumulated depreciation ends at depreciable cost, $60,000. Book value ends at $2,500.</p>
+        <h3>Double-declining balance</h3>
+        <p>Chosen when the asset is more productive when it is newer: higher expense and higher revenues early, lower expense later. The rate is often twice the straight-line rate. The rate is applied to book value (cost minus accumulated depreciation), not to depreciable cost. Residual value is not in the formula until the end.</p>
+        <div class="formula">
+          <p class="eq">(Cost − accumulated depreciation) × 2 / useful life = depreciation expense</p>
+          <p class="eq">Straight-line rate = 1/3. Double-declining rate = 2/3.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Year ending</th><th>Computation</th><th class="num">Expense</th><th class="num">Accumulated</th><th class="num">Book value</th></tr></thead>
+            <tbody>
+              <tr><td>1 Jun 2026</td><td>Cost</td><td class="num"></td><td class="num">0</td><td class="num">62,500</td></tr>
+              <tr><td>31 May 2027</td><td>62,500 × 2/3</td><td class="num">41,667</td><td class="num">41,667</td><td class="num">20,833</td></tr>
+              <tr><td>31 May 2028</td><td>20,833 × 2/3</td><td class="num">13,889</td><td class="num">55,556</td><td class="num">6,944</td></tr>
+              <tr><td>31 May 2029</td><td>Plug so book value equals residual</td><td class="num">4,444</td><td class="num">60,000</td><td class="num">2,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>62,500 × 2/3 is 41,666.67, shown as 41,667. 20,833 × 2/3 is 13,888.67, shown as 13,889. A full 2/3 of the year-3 book value would be about 4,629 and would push book value below the $2,500 residual. The slide’s rule for the last year: set net book value equal to residual value, set accumulated depreciation equal to depreciable cost, and back into the expense. 6,944 − 2,500 = 4,444.</p>
+        <h3>Quiz 7.1 · Mimi Company, worked</h3>
+        <p>Machine acquired 1 January. Cost £230,000. Salvage £30,000. Life 5 years or 5,000 units. First-year output 1,200 units. The quiz slide leaves the amounts blank; these follow the formulas above.</p>
+        <ul>
+          <li>Straight-line: (230,000 − 30,000) / 5 = <strong>£40,000</strong>. Debit depreciation expense 40,000; credit accumulated depreciation 40,000.</li>
+          <li>Units of production: unit rate = 200,000 / 5,000 = £40. Expense = 40 × 1,200 = <strong>£48,000</strong>. Debit depreciation expense 48,000; credit accumulated depreciation 48,000.</li>
+        </ul>
+        <h3>Quiz 7.2 · Kenneth Jay, double-declining, worked</h3>
+        <p>Machinery cost £500,000 on 1 January. Life 5 years. Salvage £50,000. The slide gives the rate: (1/5) × 2 = 0.40. Apply 40% to beginning book value. In the last year, stop at salvage, which is the van rule.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Computation</th><th class="num">Expense</th><th class="num">Accumulated</th><th class="num">Book value</th></tr></thead>
+            <tbody>
+              <tr><td>Start</td><td>Cost</td><td class="num"></td><td class="num">0</td><td class="num">500,000</td></tr>
+              <tr><td>1</td><td>500,000 × 0.40</td><td class="num">200,000</td><td class="num">200,000</td><td class="num">300,000</td></tr>
+              <tr><td>2</td><td>300,000 × 0.40</td><td class="num">120,000</td><td class="num">320,000</td><td class="num">180,000</td></tr>
+              <tr><td>3</td><td>180,000 × 0.40</td><td class="num">72,000</td><td class="num">392,000</td><td class="num">108,000</td></tr>
+              <tr><td>4</td><td>108,000 × 0.40</td><td class="num">43,200</td><td class="num">435,200</td><td class="num">64,800</td></tr>
+              <tr><td>5</td><td>64,800 − 50,000</td><td class="num">14,800</td><td class="num">450,000</td><td class="num">50,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Year 5 is not 64,800 × 0.40 = 25,920, because that would leave book value at 38,880, below salvage. Depreciable cost overall is 450,000, which equals accumulated depreciation at the end.</p>
+      </section>
+
+      <section class="section" id="intangibles">
+        <h2>Intangible assets</h2>
+        <p>On acquisition, decide whether each intangible has a definite or an indefinite life.</p>
+        <ul>
+          <li><strong>Definite life.</strong> Allocate cost straight-line over useful life. That allocation is amortization, analogous to depreciation. Most companies estimate no residual value, because the asset will be used rather than sold. Amortization uses an accumulated-amortization contra-account in the lecture entries.</li>
+          <li><strong>Indefinite life.</strong> Do not amortize. Review at least annually for impairment, starting with qualitative factors. An example of impairment is fair value below carrying amount. Goodwill is the indefinite-life case the slides develop.</li>
+        </ul>
+        <h3>Goodwill · Valley Drug</h3>
+        <p>Wheeler pays £400,000 for Valley Drug. Fair values of the recorded items: inventory 220,000, long-term operating assets 110,000, other assets 10,000, liabilities 20,000. Identifiable net assets = (220,000 + 110,000 + 10,000) − 20,000 = 320,000. Goodwill = 400,000 − 320,000 = <strong>80,000</strong>. The slides describe those 80,000 as the other favorable factors Wheeler was willing to pay for: reputation, service, location, management, financial standing. For accounting, goodwill is the excess of the purchase price of the company as a whole over the fair value of its identifiable net assets.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Inventory</td><td class="num">220,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Long-term operating assets</td><td class="num">110,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Other assets</td><td class="num">10,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Goodwill</td><td class="num">80,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Liabilities</td><td class="num"></td><td class="num">20,000</td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">400,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Goodwill is not amortized. It is tested for impairment at least annually.</p>
+        <h3>Patent</h3>
+        <p>A patent with a 20-year legal life is purchased after 7 years, so 13 years of legal life remain. Useful life to Wheeler is 8 years, which is shorter, so amortize over 8 years. Cost £200,000. Annual amortization = 200,000 / 8 = <strong>25,000</strong>. Use the useful life, not the remaining legal life, when useful life is shorter.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Amortization expense</td><td class="num">25,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accumulated amortization</td><td class="num"></td><td class="num">25,000</td></tr>
+            </tbody>
+            <caption>31 December, each year for eight years.</caption>
+          </table>
+        </div>
+        <h3>License · W.W. Cole</h3>
+        <p>Operating license bought for £40,000 cash on 1 January.</p>
+        <ol>
+          <li>Purchase: debit license 40,000; credit cash 40,000.</li>
+          <li>Definite life of 5 years: amortization = 40,000 / 5 = 8,000. Debit amortization expense 8,000; credit accumulated amortization 8,000.</li>
+          <li>If the license renews automatically and therefore has an indefinite life: <strong>no amortization entry</strong>. Test for impairment instead.</li>
+        </ol>
+      </section>
+
+      <section class="section" id="impairment">
+        <h2>Impairment</h2>
+        <p>An impairment test asks whether book value (carrying amount) is higher than recoverable amount. If it is, there is an impairment loss.</p>
+        <div class="formula">
+          <p class="eq">Recoverable amount = the higher of (fair value − disposal costs) and value in use</p>
+          <p class="eq">If carrying amount &gt; recoverable amount, impairment loss = the difference</p>
+        </div>
+        <p>Value in use is the value of keeping the asset and generating cash. Fair value minus disposal costs is the value of selling it. Take the higher of those two, then compare with carrying amount.</p>
+        <h3>Wheeler fitness-center building</h3>
+        <p>Bought five years ago for £600,000. Straight-line, 20-year life, no residual value. Remaining life is still estimated at 15 years. There are indications of impairment. Present value of cash flows over the remaining 15 years (value in use) is £375,000. Net fair value is £230,000.</p>
+        <div class="formula">
+          <p class="eq">Annual depreciation = 600,000 / 20 = 30,000</p>
+          <p class="eq">Accumulated depreciation after 5 years = 30,000 × 5 = 150,000</p>
+          <p class="eq">Carrying amount = 600,000 − 150,000 = 450,000</p>
+          <p class="eq">Recoverable amount = higher of 230,000 and 375,000 = 375,000</p>
+          <p class="eq">Impairment loss = 450,000 − 375,000 = 75,000</p>
+        </div>
+        <p>Record the current year’s depreciation first, then the impairment. The loss is credited to accumulated impairment loss, another contra-asset, not directly to the building in this lecture.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Depreciation expense</td><td class="num">30,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accumulated depreciation — building</td><td class="num"></td><td class="num">30,000</td></tr>
+            </tbody>
+            <caption>31 December, year 5, the ordinary depreciation entry.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Impairment loss</td><td class="num">75,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accumulated impairment loss — building</td><td class="num"></td><td class="num">75,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Depreciation after the impairment uses the new carrying amount and the remaining life. Residual value is still zero.</p>
+        <div class="formula">
+          <p class="eq">Carrying amount after impairment = 600,000 − 150,000 − 75,000 = 375,000</p>
+          <p class="eq">New annual depreciation, years 6 through 20 = 375,000 / 15 = 25,000</p>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Depreciation expense</td><td class="num">25,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accumulated depreciation — building</td><td class="num"></td><td class="num">25,000</td></tr>
+            </tbody>
+            <caption>31 December, year 6, and each later year on this schedule.</caption>
+          </table>
+        </div>
+        <h3>Quiz 7.3 · Amber Company, worked</h3>
+        <p>Building cost £900,000. Accumulated depreciation at 1 January of the current year is £270,000. Fair value £500,000. Direct selling cost £20,000. Value in use £500,000.</p>
+        <div class="formula">
+          <p class="eq">Carrying amount = 900,000 − 270,000 = 630,000</p>
+          <p class="eq">Fair value less costs to sell = 500,000 − 20,000 = 480,000</p>
+          <p class="eq">Recoverable amount = higher of 480,000 and 500,000 = 500,000</p>
+          <p class="eq">Impairment loss = 630,000 − 500,000 = 130,000</p>
+        </div>
+        <p>The building is impaired because 630,000 &gt; 500,000. Debit impairment loss 130,000; credit accumulated impairment loss — building 130,000. Do not compare carrying amount with the raw fair value of 500,000 and forget the £20,000 selling cost when you identify recoverable amount. The selling cost matters, and value in use still wins.</p>
+      </section>
+
+      <section class="section" id="report">
+        <h2>Reporting PPE</h2>
+        <p>Wheeler Resorts, partial statements at 31 December 2018, as laid out on the slide. Accumulated depreciation and accumulated impairment losses are both deducted. Land is not depreciated in this presentation.</p>
+        <div class="table-wrap">
+          <table>
+            <caption style="caption-side:top;text-align:left;font-weight:650">Partial balance sheet</caption>
+            <tbody>
+              <tr><td>Land</td><td class="num">750,000</td></tr>
+              <tr><td>Buildings</td><td class="num">520,000</td></tr>
+              <tr><td>Less: accumulated depreciation</td><td class="num">(280,000)</td></tr>
+              <tr><td>Less: accumulated impairment losses</td><td class="num">(130,000)</td></tr>
+              <tr class="total"><td>Buildings, net</td><td class="num">110,000</td></tr>
+              <tr><td>Equipment</td><td class="num">330,000</td></tr>
+              <tr><td>Less: accumulated depreciation</td><td class="num">(170,000)</td></tr>
+              <tr><td>Less: accumulated impairment losses</td><td class="num">(95,000)</td></tr>
+              <tr class="total"><td>Equipment, net</td><td class="num">65,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>On the statement of comprehensive income, the expenses shown are depreciation expense £63,000 and impairment losses £85,000. The impairment loss is an expense of the period. It is not buried inside depreciation.</p>
+      </section>
+
+      <section class="section" id="disposal">
+        <h2>Disposals</h2>
+        <p>A disposal can be involuntary (storm, fire, theft, accident) or voluntary (drop a product, replace a machine with a more efficient one). Voluntary disposals in the slides include sales, trade-ins, and retirements. The entries that are actually worked are scrapping and sale.</p>
+        <p>A disposal of a depreciable asset usually needs two entries:</p>
+        <ol>
+          <li>Update depreciation expense and accumulated depreciation up to the disposal date.</li>
+          <li>Record the disposal. Remove the cost and the accumulated depreciation. The difference between resources received and net book value is a gain or a loss, reported in operations on the income statement.</li>
+        </ol>
+        <div class="formula">
+          <p class="eq">Gain (loss) = cash proceeds − book value − any cash paid to remove the asset</p>
+          <p class="eq">Book value = cost − accumulated depreciation, after the updating entry</p>
+        </div>
+        <h3>Wheeler’s computer</h3>
+        <p>Cost £15,000. Five-year life. No salvage. Straight-line depreciation is 15,000 / 5 = <strong>£3,000 per year</strong>. Every disposal below starts with the updating entry for the year of disposal: debit depreciation expense 3,000; credit accumulated depreciation — computer 3,000.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Situation</th><th>Book value</th><th>Entry to record the disposal</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Scrapped after 5 full years. Nothing received.</td>
+                <td>0 (accumulated depreciation 15,000)</td>
+                <td>Dr Accumulated depreciation 15,000<br>Cr Computer 15,000</td>
+              </tr>
+              <tr>
+                <td>Scrapped after 5 years and £300 is paid to dismantle it.</td>
+                <td>0, plus £300 cash paid</td>
+                <td>Dr Accumulated depreciation 15,000<br>Dr Loss on disposal 300<br>Cr Computer 15,000<br>Cr Cash 300</td>
+              </tr>
+              <tr>
+                <td>Scrapped after 4 years and £300 is paid to dismantle it.</td>
+                <td>15,000 − 12,000 = 3,000, plus 300 cash</td>
+                <td>Dr Accumulated depreciation 12,000<br>Dr Loss on disposal 3,300<br>Cr Computer 15,000<br>Cr Cash 300</td>
+              </tr>
+              <tr>
+                <td>Sold for £600 after 5 years. No disposal costs.</td>
+                <td>0, so the whole £600 is a gain</td>
+                <td>Dr Accumulated depreciation 15,000<br>Dr Cash 600<br>Cr Computer 15,000<br>Cr Gain on sale 600</td>
+              </tr>
+              <tr>
+                <td>Sold for £600 after 4 years.</td>
+                <td>3,000. Loss = 3,000 − 600 = 2,400</td>
+                <td>Dr Accumulated depreciation 12,000<br>Dr Cash 600<br>Dr Loss on sale 2,400<br>Cr Computer 15,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The slide’s note on the four-year sale is (+600) + (−3,000) = −2,400. Cash in, book value out.</p>
+        <h3>Quiz 7.4 · Didericksen, worked</h3>
+        <p>Truck cost £50,000, accumulated depreciation £24,000, sold for £30,000 cash. The quiz asks for the sale entry. Book value = 50,000 − 24,000 = 26,000. Cash exceeds book value by 4,000, so there is a gain. The updating entry is separate if depreciation is not yet current; the sale entry itself is:</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">30,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Accumulated depreciation</td><td class="num">24,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Truck</td><td class="num"></td><td class="num">50,000</td></tr>
+              <tr><td class="acct cr">Gain on sale</td><td class="num"></td><td class="num">4,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="cash">
+        <h2>Cash-flow effects</h2>
+        <p>The learning outcome asks for the cash effect of acquiring, using, and disposing of long-lived assets. The slides show that effect through the journal entries rather than through a statement of cash flows.</p>
+        <ul>
+          <li><strong>Acquisition for cash</strong> is a cash outflow (the truck, the lump-sum purchase, the license). Buying with a note is not a cash outflow for the financed portion. The asset and the liability both rise. Interest later is an operating cash outflow, and in this chapter it is not added to the asset.</li>
+          <li><strong>Use</strong> — depreciation, amortization, and impairment loss reduce net income and do not use cash. Accumulated depreciation, accumulated amortization, and accumulated impairment loss are not cash accounts.</li>
+          <li><strong>Disposal</strong> — the cash flow is the cash received, minus any cash paid to remove the asset. The gain or loss is the plug that makes the entry balance. A gain is not additional cash. A loss is not a cash payment. Selling the computer for £600 produces a £600 inflow whether the entry also shows a gain (after five years) or a loss (after four years).</li>
+        </ul>
+      </section>
+
+      <section class="section" id="traps">
+        <h2>Exam traps</h2>
+        <ul>
+          <li>Capitalize sales tax, legal fees, transport, and installation. Expense interest on the purchase as incurred. A cash discount reduces the capitalized cost (the truck is 15,096, not 15,396).</li>
+          <li>Allocate a lump-sum price by relative fair value, not by area or by the number of assets. Land 25% and building 75% come from 1,000,000 / 4,000,000 and 3,000,000 / 4,000,000.</li>
+          <li>Ordinary repairs are expenses. Improvements that extend life, efficiency, or capacity are added to the asset. Expensing lowers taxes now; capitalizing raises current assets and current income.</li>
+          <li>Land is not depreciated. Residual value is subtracted for straight-line and units-of-production. It is not subtracted inside the double-declining formula until the last year, when book value is not allowed to fall below it.</li>
+          <li>Double-declining multiplies beginning book value by twice the straight-line rate. It does not multiply depreciable cost by that rate. Year 1 of the van is 62,500 × 2/3, not 60,000 × 2/3.</li>
+          <li>Units-of-production expense changes every period with actual output. Straight-line does not.</li>
+          <li>Amortize a definite-life intangible over useful life when that is shorter than remaining legal life. The patent uses 8 years, not 13. An indefinite life, including goodwill and the auto-renewing license, is not amortized.</li>
+          <li>Goodwill = price paid − fair value of identifiable net assets, and net assets are assets minus liabilities. Forgetting to subtract the £20,000 of liabilities makes goodwill 60,000 instead of 80,000.</li>
+          <li>Recoverable amount is the higher of value in use and fair value less disposal costs. Compare carrying amount with that number. In both lecture cases, value in use is the higher one.</li>
+          <li>After impairment, depreciation restarts from the new carrying amount over the remaining life. Wheeler’s later depreciation is 25,000, not the old 30,000.</li>
+          <li>On a disposal, update depreciation first. Remove both cost and accumulated depreciation. Cash of 600 against a book value of 3,000 is a loss of 2,400, not a gain.</li>
+          <li>A loss on disposal is not the cash paid, unless book value is already zero and the only cash is a removal cost.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="practice">
+        <h2>Practice</h2>
+        <div class="tools">
+          <button type="button" data-expand="open">Open all answers</button>
+          <button type="button" data-expand="close">Close all answers</button>
+        </div>
+        <details class="qa">
+          <summary>1. A company pays 900,000 for land and a building. Appraisal values are land 200,000 and building 600,000. The purchase is paid with 300,000 cash and a note for the rest. Record the purchase.</summary>
+          <div class="answer">
+            <p>Total fair value = 800,000. Land = 200/800 × 900,000 = 225,000. Building = 600/800 × 900,000 = 675,000. Debit land 225,000; debit building 675,000; credit cash 300,000; credit note payable 600,000.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>2. Equipment costs 48,000, residual value 3,000, life 5 years or 90,000 units. Year 1 output is 18,000 units. Compute year-1 depreciation under straight-line, units of production, and double-declining balance.</summary>
+          <div class="answer">
+            <p>Straight-line: (48,000 − 3,000) / 5 = <strong>9,000</strong>. Units: rate = 45,000 / 90,000 = 0.50 per unit; expense = 0.50 × 18,000 = <strong>9,000</strong>. Double-declining rate = 2/5 = 40%. Year 1 = 48,000 × 0.40 = <strong>19,200</strong>. Residual value is ignored in the first DDB year.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>3. A building cost 400,000 and has been depreciated straight-line for 6 years on a 20-year life with no residual value. Value in use is now 250,000. Fair value is 220,000 and disposal costs are 10,000. Compute the impairment loss and next year’s depreciation. Remaining life is 14 years.</summary>
+          <div class="answer">
+            <p>Accumulated depreciation = (400,000 / 20) × 6 = 120,000. Carrying amount = 280,000. Fair value less disposal costs = 210,000. Recoverable amount = higher of 210,000 and 250,000 = 250,000. Loss = 280,000 − 250,000 = <strong>30,000</strong>. Debit impairment loss 30,000; credit accumulated impairment loss 30,000. Next depreciation = 250,000 / 14 = <strong>17,857</strong> (rounded to the nearest pound or dollar, as the question requires).</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>4. A machine cost 24,000, has accumulated depreciation of 18,000, and is sold for 4,000. Depreciation is already up to date. Record the sale. Separately, what is the entry if instead the machine is scrapped and removal costs 500 cash?</summary>
+          <div class="answer">
+            <p>Book value = 6,000. Sale: debit cash 4,000; debit accumulated depreciation 18,000; debit loss 2,000; credit machine 24,000. Scrap with a 500 removal cost: debit accumulated depreciation 18,000; debit loss 6,500; credit machine 24,000; credit cash 500. The loss is the book value plus the cash paid to remove it.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>5. A company pays 500,000 for another firm. Identifiable assets have a fair value of 460,000 and liabilities have a fair value of 70,000. How much is goodwill? The acquired firm also has a patent that cost the seller 40,000, with 12 years of legal life left and a useful life of 10 years, and no residual value. What is annual amortization, and what entry is made for goodwill at year-end?</summary>
+          <div class="answer">
+            <p>Net identifiable assets = 460,000 − 70,000 = 390,000. Goodwill = 500,000 − 390,000 = <strong>110,000</strong>. Patent amortization uses useful life: 40,000 / 10 = <strong>4,000</strong> per year. Debit amortization expense 4,000; credit accumulated amortization 4,000. Goodwill is not amortized. There is no year-end amortization entry. It is tested for impairment.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer">Chapter 7 follows the PPE and intangibles lecture: Wheeler’s acquisitions, the van schedules, Valley Drug, the fitness-center impairment, and the computer disposals.</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

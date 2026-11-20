@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 5 · Cash and receivables · FA1 final</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Ch 5 Cash</a>
+      <a href="chapter-6.html">Ch 6 Inventory</a>
+      <a href="chapter-7.html">Ch 7 PPE</a>
+      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="layout">
+    <aside class="toc">
+      <strong>Chapter 5</strong>
+      <a href="#outcomes">Study targets</a>
+      <a href="#cash">Cash management</a>
+      <a href="#bank">Bank reconciliation</a>
+      <a href="#hunt">Hunt Company example</a>
+      <a href="#receivables">Receivables</a>
+      <a href="#discounts">Discounts and returns</a>
+      <a href="#netsales">Gross and net sales</a>
+      <a href="#allowance">Allowance method</a>
+      <a href="#aging">Aging</a>
+      <a href="#notes">Notes receivable</a>
+      <a href="#ratios">Receivables ratios</a>
+      <a href="#traps">Exam traps</a>
+      <a href="#practice">Practice</a>
+    </aside>
+    <div>
+      <section class="section" id="outcomes">
+        <p class="kicker">Chapter 5</p>
+        <h1>Cash and receivables</h1>
+        <p>The slides do not print a formal learning-outcome list for this chapter. These are the tasks the deck actually trains.</p>
+        <ul>
+          <li>State the three cash-management responsibilities.</li>
+          <li>Reconcile the bank balance to the book balance and journalize only the book side.</li>
+          <li>Record credit sales, cash collections, sales discounts, and sales returns, and compute net sales.</li>
+          <li>Estimate bad debts with the allowance method (percentage of receivables and aging), write off accounts, and reinstate later collections.</li>
+          <li>Record a note received in settlement of an account, interest at maturity, and a dishonored note.</li>
+          <li>Compute receivables turnover and the average collection period.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="cash">
+        <h2>1. Cash</h2>
+        <p>Cash-management responsibilities in the slides:</p>
+        <ol>
+          <li><strong>Accurate accounting</strong> so cash-flow reports and cash balances can be prepared.</li>
+          <li><strong>Controls</strong> so enough cash is on hand for current operations, maturing liabilities, and unexpected emergencies.</li>
+          <li><strong>Avoid idle cash.</strong> Idle cash earns nothing, so surplus cash is invested in securities until operations need it.</li>
+        </ol>
+        <p>Using a bank account is itself an internal control. Each month the bank statement shows the opening balance, deposits, checks processed, and the ending balance. That statement will not equal the company’s cash account, so the two are reconciled.</p>
+      </section>
+
+      <section class="section" id="bank">
+        <h2>Reconciling items</h2>
+        <h3>Timing differences</h3>
+        <dl class="dl">
+          <dt>Outstanding checks</dt>
+          <dd>Checks the company has already deducted, which the bank has not yet paid. Subtract them from the <em>bank</em> balance. A check voided when it was written is not outstanding.</dd>
+          <dt>Deposits in transit</dt>
+          <dd>Deposits the company has recorded, which the bank has not processed by the statement date. Add them to the <em>bank</em> balance.</dd>
+        </dl>
+        <h3>Items the books do not yet show</h3>
+        <ul>
+          <li><strong>Service charges</strong> — bank fees on the statement, not yet on the books. Expense.</li>
+          <li><strong>NSF checks</strong> — a deposit that the bank reverses because the payer’s account had insufficient funds. The slides’ reconciliation labels this line “NFS”; that is the NSF item. It reduces book cash and restores a receivable.</li>
+          <li><strong>Direct deposits</strong> — amounts the bank has already credited, often a customer paying the company.</li>
+          <li><strong>Interest paid by the bank</strong> — interest on the company’s balance. Interest revenue.</li>
+          <li><strong>Errors</strong> — either the bank or the company can mis-record a cash amount. Correct an error on the side that made it.</li>
+        </ul>
+        <div class="callout rule">
+          <strong class="label">What gets a journal entry</strong>
+          Deposits in transit and outstanding checks are already on the books. They change only the bank side of the reconciliation. Journal entries are required for items that update the company’s cash account: interest, direct deposits, service charges, NSF checks, bank-initiated payments, and company errors.
+        </div>
+        <div class="formula">
+          <p class="eq">Correct cash = Bank balance + deposits in transit − outstanding checks ± bank errors</p>
+          <p class="eq">Correct cash = Book balance + interest and other unrecorded receipts − charges, NSF, and other unrecorded payments ± company errors</p>
+        </div>
+      </section>
+
+      <section class="section" id="hunt">
+        <h2>Worked example · Hunt Company, July</h2>
+        <p>Bank statement ending balance $14,422. Cash in the general ledger $13,937.</p>
+        <ul>
+          <li>Deposit in transit, 31 July, $3,100.</li>
+          <li>Outstanding checks: No. 625 $326, No. 631 $426, No. 634 $185. Total $937. Check No. 627 was voided and is ignored.</li>
+          <li>Bank service charge $7.</li>
+          <li>Direct deposit by Joy Company, a regular customer, $3,200.</li>
+          <li>Bank transfer of $425 to Martin Custodial Service for an amount owed.</li>
+          <li>Interest paid by the bank $60.</li>
+          <li>Check No. 630 for Thelma Jones’s wages was recorded as $240 instead of $420. Wage expense is understated and cash is overstated by $180.</li>
+          <li>NSF checks: none.</li>
+        </ul>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bank side</th><th class="num">$</th><th>Book side</th><th class="num">$</th></tr></thead>
+            <tbody>
+              <tr><td>Ending balance per bank</td><td class="num">14,422</td><td>Ending balance per books</td><td class="num">13,937</td></tr>
+              <tr><td>Deposit in transit</td><td class="num">3,100</td><td>Interest paid by the bank</td><td class="num">60</td></tr>
+              <tr><td>Outstanding checks</td><td class="num">(937)</td><td>Direct deposit (Joy)</td><td class="num">3,200</td></tr>
+              <tr><td></td><td class="num"></td><td>Service charge</td><td class="num">(7)</td></tr>
+              <tr><td></td><td class="num"></td><td>NSF checks</td><td class="num">0</td></tr>
+              <tr><td></td><td class="num"></td><td>Custodial transfer</td><td class="num">(425)</td></tr>
+              <tr><td></td><td class="num"></td><td>Wage error (cash too high)</td><td class="num">(180)</td></tr>
+              <tr class="total"><td>Correct cash</td><td class="num">16,585</td><td>Correct cash</td><td class="num">16,585</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Check: 14,422 + 3,100 − 937 = 16,585. Books: 13,937 + 60 + 3,200 − 7 − 425 − 180 = 16,585.</p>
+        <p>The slides combine the book updates into two entries. The direct deposit is credited to accounts receivable, because Joy is a regular customer (a collection, not a new sale).</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">3,260</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Interest revenue</td><td class="num"></td><td class="num">60</td></tr>
+              <tr><td class="acct cr">Accounts receivable</td><td class="num"></td><td class="num">3,200</td></tr>
+            </tbody>
+            <caption>Receipts the bank has already recorded. 60 + 3,200 = 3,260.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Miscellaneous expense</td><td class="num">7</td><td class="num"></td></tr>
+              <tr><td class="acct">Custodial expense</td><td class="num">425</td><td class="num"></td></tr>
+              <tr><td class="acct">Wage expense</td><td class="num">180</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">612</td></tr>
+            </tbody>
+            <caption>Charges and the wage error. 7 + 425 + 180 = 612. Net increase in book cash = 3,260 − 612 = 2,648.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="receivables">
+        <h2>2. Receivables</h2>
+        <p>A receivable is a claim for money, goods, or services.</p>
+        <dl class="dl">
+          <dt>Accounts receivable</dt>
+          <dd>A current asset for money due for services performed or merchandise sold on credit.</dd>
+          <dt>Notes receivable</dt>
+          <dd>A formal note written by the customer. A promissory note is a stronger legal claim than an open account.</dd>
+        </dl>
+        <p>The selling cycle in the slides runs: accept the order, deliver, collect cash, accept returns, deal with non-payment, and provide continued service (warranties). The chapter works the first five. Warranty expense and warranty liability are only named here; the entries are in <a href="chapter-8.html#warranty">Chapter 8</a>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Account</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td>Sales discounts</td><td>Contra-revenue. A reduction of the selling price if the customer pays inside a stated period.</td></tr>
+              <tr><td>Sales returns and allowances</td><td>Contra-revenue. Deducted from sales.</td></tr>
+              <tr><td>Allowance for bad debts</td><td>Contra-receivable. Deducted from accounts receivable to reach the cash expected to be collected.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Worked example · Bob Pot Bakery, the sale</h3>
+        <p>30 jars sold for cash and 20 jars on credit, at 100 THB each. Inventory decreases by 4,000 THB at the same time. The second entry is the matching principle: the cost of the goods is an expense in the same period as the revenue.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">3,000</td><td class="num"></td></tr>
+              <tr><td class="acct">Accounts receivable</td><td class="num">2,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Sales revenue</td><td class="num"></td><td class="num">5,000</td></tr>
+            </tbody>
+            <caption>30 × 100 cash and 20 × 100 on credit.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cost of goods sold</td><td class="num">4,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Inventory</td><td class="num"></td><td class="num">4,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="discounts">
+        <h2>Credit terms, discounts, and returns</h2>
+        <ul>
+          <li><strong>2/10, n/30</strong> — 2% off if paid within 10 days; otherwise the full amount is due in 30 days.</li>
+          <li><strong>1/10, n/30</strong> — 1% off if paid within 10 days; otherwise due in 30 days.</li>
+          <li><strong>n/30 EOM</strong> — the full amount is due by the end of the month. No early-payment discount.</li>
+        </ul>
+        <p>If the 2,000 THB credit sale is on terms 2/10, n/30 and the customer pays inside the discount period: 2,000 × 0.98 = 1,960 THB.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">1,960</td><td class="num"></td></tr>
+              <tr><td class="acct">Sales discounts</td><td class="num">40</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accounts receivable</td><td class="num"></td><td class="num">2,000</td></tr>
+            </tbody>
+            <caption>The receivable is cleared in full. The 40 THB is contra-revenue, not an expense.</caption>
+          </table>
+        </div>
+        <p>Returns, before any collection: goods sold for 1,500 THB come back (1,000 from cash customers, 500 from credit customers). Cost of the returned goods is 1,200 THB.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Sales returns and allowances</td><td class="num">1,500</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cash</td><td class="num"></td><td class="num">1,000</td></tr>
+              <tr><td class="acct cr">Accounts receivable</td><td class="num"></td><td class="num">500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Inventory</td><td class="num">1,200</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Cost of goods sold</td><td class="num"></td><td class="num">1,200</td></tr>
+            </tbody>
+            <caption>The slides call the credit an expense reversal.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="netsales">
+        <h2>Gross sales and net sales</h2>
+        <div class="formula">
+          <p class="eq">Gross sales = sales revenue before discounts and returns</p>
+          <p class="eq">Net sales = gross sales − sales discounts − sales returns and allowances</p>
+        </div>
+        <p>The lecture combines the bakery illustrations on one partial statement of comprehensive income. The discount is granted only on merchandise that is <em>not</em> returned. Of the 2,000 THB credit sale, 500 THB is returned, so the 2% discount applies to 1,500 THB, not to 2,000.</p>
+        <div class="table-wrap">
+          <table>
+            <caption style="caption-side:bottom;text-align:left;font-family:var(--serif);font-style:italic;color:var(--muted)">THB. Discount = 40 − (500 × 0.02) = 40 − 10 = 30. Net sales = 5,000 − 30 − 1,500 = 3,470.</caption>
+            <tbody>
+              <tr><td>Sales revenue (gross sales)</td><td class="num">5,000</td></tr>
+              <tr><td>Less: sales discounts</td><td class="num">(30)</td></tr>
+              <tr><td>Less: sales returns and allowances</td><td class="num">(1,500)</td></tr>
+              <tr class="total"><td>Net sales revenue</td><td class="num">3,470</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout note">
+          <strong class="label">Credit-card discounts, from the chapter exercises</strong>
+          Exercises 2 and 3 tell you to treat credit-card discounts as selling, general, and administrative expense, while sales discounts and sales returns stay contra-revenue. Net sales then excludes sales discounts and returns, and does not subtract the card fee.
+        </div>
+      </section>
+
+      <section class="section" id="allowance">
+        <h2>Bad debts and the allowance method</h2>
+        <p>The slides cross out the practice of waiting until a specific account is known to be uncollectible and then recording the loss. Accounting standards require an <strong>expected-loss model</strong>: recognize impairment of receivables before any particular debt goes bad. That is the allowance method.</p>
+        <h3>Estimate</h3>
+        <p>Bob Pot estimates that receivables are impaired by 45,000 THB.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Bad debt expense</td><td class="num">45,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Allowance for bad debts</td><td class="num"></td><td class="num">45,000</td></tr>
+            </tbody>
+            <caption>Expense now. The allowance is a contra-asset, so net receivables fall.</caption>
+          </table>
+        </div>
+        <h3>Write-off</h3>
+        <p>Jake Palmer’s 15,000 THB balance is identified as uncollectible. The write-off uses the allowance. It does not record new expense.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Allowance for bad debts</td><td class="num">15,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accounts receivable</td><td class="num"></td><td class="num">15,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">Before write-off</th><th class="num">After write-off</th></tr></thead>
+            <tbody>
+              <tr><td>Accounts receivable</td><td class="num">500,000</td><td class="num">485,000</td></tr>
+              <tr><td>Less: allowance</td><td class="num">45,000</td><td class="num">30,000</td></tr>
+              <tr class="total"><td>Net receivables</td><td class="num">455,000</td><td class="num">455,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Net receivables do not change. Both the asset and the contra-asset fall by the same amount.</p>
+        <h3>Recovery</h3>
+        <p>If that customer later pays, reverse the write-off first, then record the cash. Two entries, as in the slides.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Accounts receivable</td><td class="num">15,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Allowance for bad debts</td><td class="num"></td><td class="num">15,000</td></tr>
+            </tbody>
+            <caption>Reinstate the account.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">15,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accounts receivable</td><td class="num"></td><td class="num">15,000</td></tr>
+            </tbody>
+            <caption>Then collect it.</caption>
+          </table>
+        </div>
+        <h3>Percentage of total receivables</h3>
+        <p>This method sets the <em>ending balance</em> of the allowance. Bad debt expense is whatever entry is needed to reach that balance. Ending receivables 500,000 THB, estimated 12% uncollectible.</p>
+        <div class="formula">
+          <p class="eq">Target allowance = 500,000 × 0.12 = 60,000</p>
+          <p class="eq">Net receivables = 500,000 × 0.88 = 440,000</p>
+          <p class="eq">Bad debt expense = target allowance − existing credit balance in the allowance</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Existing allowance</th><th class="num">Expense</th><th>Entry</th></tr></thead>
+            <tbody>
+              <tr><td>No balance from prior years</td><td class="num">60,000</td><td>Debit bad debt expense 60,000; credit allowance 60,000.</td></tr>
+              <tr><td>Credit balance of 20,000 already there</td><td class="num">40,000</td><td>Debit bad debt expense 40,000; credit allowance 40,000. The allowance ends at 60,000, not 80,000.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout note">
+          <strong class="label">Percentage of credit sales, Exercise 5 only</strong>
+          The lecture illustrations above are balance-sheet methods: they force the allowance to a target. Exercise 5 uses a different method. Witz Electric has credit sales of $1,300,000 and estimates bad debts at 1% of credit sales. Expense is 1,300,000 × 0.01 = $13,000, debited to bad debt expense and credited to the allowance, without looking at the existing allowance balance. A $4,000 write-off is still debit allowance, credit accounts receivable. Do not mix the two methods in one computation.
+        </div>
+      </section>
+
+      <section class="section" id="aging">
+        <h2>Aging accounts receivable</h2>
+        <p>Each receivable is sorted by how long it has been outstanding. Older buckets get higher loss percentages. The sum of (bucket balance × percentage) is the required ending allowance. Expense is again only the amount needed to reach that balance.</p>
+        <h3>Lecture schedule · receivables of 50,000</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Age</th><th class="num">Balance</th><th class="num">Percent</th><th class="num">Estimated loss</th></tr></thead>
+            <tbody>
+              <tr><td>Current</td><td class="num">23,000</td><td class="num">1.5%</td><td class="num">345</td></tr>
+              <tr><td>1–30 days past due</td><td class="num">9,990</td><td class="num">4%</td><td class="num">400</td></tr>
+              <tr><td>31–60 days past due</td><td class="num">12,260</td><td class="num">20%</td><td class="num">2,452</td></tr>
+              <tr><td>61–90 days past due</td><td class="num">2,250</td><td class="num">40%</td><td class="num">900</td></tr>
+              <tr><td>91–120 days past due</td><td class="num">1,000</td><td class="num">60%</td><td class="num">600</td></tr>
+              <tr><td>Over 120 days past due</td><td class="num">1,500</td><td class="num">80%</td><td class="num">1,200</td></tr>
+              <tr class="total"><td>Total</td><td class="num">50,000</td><td class="num"></td><td class="num">5,897</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The 1–30 line is 9,990 × 0.04 = 399.60, which the slide rounds to 400. Required allowance = 5,897.</p>
+        <ul>
+          <li>No existing allowance: debit bad debt expense 5,897; credit allowance 5,897.</li>
+          <li>Existing credit balance of 2,000: expense = 5,897 − 2,000 = 3,897.</li>
+        </ul>
+        <h3>Second lecture schedule · target allowance 35,294</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Age</th><th class="num">Balance</th><th class="num">Percent</th><th class="num">Estimated loss</th></tr></thead>
+            <tbody>
+              <tr><td>Not yet due</td><td class="num">485,000</td><td class="num">1%</td><td class="num">4,850</td></tr>
+              <tr><td>Up to 90 days past due</td><td class="num">104,400</td><td class="num">6%</td><td class="num">6,264</td></tr>
+              <tr><td>Over 90 days past due</td><td class="num">80,600</td><td class="num">30%</td><td class="num">24,180</td></tr>
+              <tr class="total"><td>Required ending allowance</td><td class="num"></td><td class="num"></td><td class="num">35,294</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>If the allowance has no balance, expense is 35,294. If the allowance began with a credit balance of 29,700 and write-offs of 14,106 have already been recorded:</p>
+        <div class="formula">
+          <p class="eq">Unadjusted allowance = 29,700 − 14,106 = 15,594 credit</p>
+          <p class="eq">Bad debt expense = 35,294 − 15,594 = 19,700</p>
+        </div>
+        <p>The slide’s allowance rollforward is: beginning 29,700 − write-offs 14,106 + adjustment 19,700 = ending 35,294.</p>
+        <div class="callout rule">
+          <strong class="label">Balance sheet and income statement</strong>
+          Accounts receivable is reported less the allowance. The difference is the net amount expected to be collected. Bad debt expense is on the income statement. A write-off changes neither net receivables nor bad debt expense.
+        </div>
+      </section>
+
+      <section class="section" id="notes">
+        <h2>Notes receivable</h2>
+        <p>Four facts on the note: face amount (the amount written on the note), issuance date, due date (maturity date), and the interest rate, which is stated on an annual basis.</p>
+        <div class="formula">
+          <p class="eq">Interest = face × annual rate × time</p>
+          <p>In the lecture example, a 90-day note is measured as 3/12 of a year, not 90/365.</p>
+        </div>
+        <h3>Worked example · HoHo Tea and CoMo Computer</h3>
+        <p>On 1 May 2017 HoHo accepts a 90-day, 12% note with face £5,000 to settle CoMo’s open account. Maturity on the slide is 30 July 2017. Interest = 5,000 × 0.12 × 3/12 = £150. Cash due at maturity = 5,000 + 150 = £5,150.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Notes receivable — CoMo</td><td class="num">5,000</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Accounts receivable — CoMo</td><td class="num"></td><td class="num">5,000</td></tr>
+            </tbody>
+            <caption>1 May. The open account becomes a note. No interest is recorded on the issue date in this example.</caption>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">5,150</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Notes receivable — CoMo</td><td class="num"></td><td class="num">5,000</td></tr>
+              <tr><td class="acct cr">Interest revenue</td><td class="num"></td><td class="num">150</td></tr>
+            </tbody>
+            <caption>30 July, collected in full.</caption>
+          </table>
+        </div>
+        <p>If the note is dishonored on 30 July, HoHo still recognizes the interest. The whole claim, face plus interest, moves back to accounts receivable.</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Accounts receivable</td><td class="num">5,150</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Notes receivable — CoMo</td><td class="num"></td><td class="num">5,000</td></tr>
+              <tr><td class="acct cr">Interest revenue</td><td class="num"></td><td class="num">150</td></tr>
+            </tbody>
+            <caption>Dishonored note. Interest revenue is still earned.</caption>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="ratios">
+        <h2>Receivables turnover</h2>
+        <p>Analytical question on the slide: how effective are credit-granting and collection activities?</p>
+        <div class="formula">
+          <p class="eq">Accounts receivable turnover = Sales revenue ÷ Average accounts receivable</p>
+          <p class="eq">Average collection period = 365 ÷ Receivables turnover</p>
+        </div>
+        <p>The numerator in the slides is sales revenue, not “net credit sales.” A higher turnover means faster collection. Cash comes back sooner, so it can be invested or used to reduce borrowing. The average collection period is how long a customer takes to pay.</p>
+        <p>Skechers U.S.A. turnover in the comparison box: 2021 = 9.33, 2022 = 9.42, 2023 = 9.36. Average collection period for 2023 = 365 / 9.36 = 39.0 days.</p>
+        <div class="callout trap">
+          <strong class="label">Comparison caution, from the slide</strong>
+          Compare a firm only with its own prior years, or with other firms in the same industry that use the same financing practices.
+        </div>
+      </section>
+
+      <section class="section" id="traps">
+        <h2>Exam traps</h2>
+        <ul>
+          <li>Journalizing deposits in transit or outstanding checks. They are already recorded. Only the book side of the reconciliation is journalized.</li>
+          <li>A voided check is not an outstanding check.</li>
+          <li>Direction of a company error. Recording a $420 wage check as $240 overstates cash by $180. The correction credits cash.</li>
+          <li>A customer’s direct deposit clears a receivable. The Hunt entry credits accounts receivable, not sales.</li>
+          <li>Sales discounts and sales returns are contra-revenue. The allowance for bad debts is a contra-asset. Credit-card fees, in the exercises, are operating expenses.</li>
+          <li>After a return, the cash discount applies only to goods the customer keeps. In the bakery statement the discount is 30, not 40, and not 40 + 10.</li>
+          <li>A write-off does not change net receivables and does not record bad debt expense.</li>
+          <li>Under percentage-of-receivables or aging, expense equals the <em>gap</em> between the required allowance and the allowance balance already on the books. Subtract write-offs before you measure that gap. In the second aging example the expense is 19,700, not 35,294 and not 35,294 − 29,700.</li>
+          <li>A debit balance in the allowance (write-offs larger than the old allowance) is added to the target, not subtracted. The slides illustrate credit balances; the arithmetic is the same rule.</li>
+          <li>Percentage of credit sales (Exercise 5) ignores the existing allowance. Percentage of receivables and aging do not.</li>
+          <li>A dishonored note still produces interest revenue. The claim moves to accounts receivable at face plus interest.</li>
+          <li>For the 90-day note, the slides use 3/12, which equals 90/360. Do not switch to 90/365 unless the question says so.</li>
+          <li>Receivables turnover on this exam uses sales revenue ÷ average receivables, then 365 ÷ that turnover.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="practice">
+        <h2>Practice</h2>
+        <div class="tools">
+          <button type="button" data-expand="open">Open all answers</button>
+          <button type="button" data-expand="close">Close all answers</button>
+        </div>
+
+        <details class="qa">
+          <summary>1. Bank reconciliation. Bank balance $8,400. Book balance $7,650. Deposit in transit $1,200. Outstanding checks $900. Interest earned by the bank $80. A customer’s electronic payment of $1,200 is on the bank statement and is not yet on the books. Service charge $30. NSF check $140. A collection from a customer was recorded as $560 instead of $500. What is the correct cash balance, and what entries update the books?</summary>
+          <div class="answer">
+            <p>Bank: 8,400 + 1,200 − 900 = <strong>8,700</strong>. The recording error overstated cash by 60. Book: 7,650 + 80 + 1,200 − 30 − 140 − 60 = <strong>8,700</strong>.</p>
+            <p>Debit cash 1,280; credit interest revenue 80; credit accounts receivable 1,200. Debit miscellaneous expense 30; debit accounts receivable 140 (NSF); debit accounts receivable 60 (the collection was recorded 60 too high, so the receivable was reduced too far); credit cash 230.</p>
+            <p>Do not journalize the deposit in transit or the outstanding checks.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>2. Net sales. Gross sales are 8,000, of which 5,000 is on credit, terms 2/10, n/30. Customers return 1,000 of the credit sales before paying. The rest of the credit customers pay inside the discount period. What is net sales?</summary>
+          <div class="answer">
+            <p>Discount base = 5,000 − 1,000 = 4,000. Discount = 4,000 × 0.02 = 80. Net sales = 8,000 − 80 − 1,000 = <strong>7,920</strong>. The cash sales of 3,000 are not discounted and were not returned.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>3. Aging. Not yet due 200,000 at 2%. Past due 40,000 at 10%. Over 90 days 10,000 at 40%. The allowance has a credit balance of 3,000 before the adjustment, after write-offs. Prepare the adjusting entry and state net receivables.</summary>
+          <div class="answer">
+            <p>Required allowance = 200,000 × 0.02 + 40,000 × 0.10 + 10,000 × 0.40 = 4,000 + 4,000 + 4,000 = 12,000. Expense = 12,000 − 3,000 = <strong>9,000</strong>. Debit bad debt expense 9,000; credit allowance 9,000. Receivables total 250,000. Net receivables = 250,000 − 12,000 = <strong>238,000</strong>.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>4. A 120-day, 9% note with face 20,000 is accepted on 1 March to settle an account. Use a 30-day month, as the lecture uses months for its 90-day note (120 days = 4 months). Record acceptance, and then the entry if the maker pays at maturity. What changes if the note is dishonored?</summary>
+          <div class="answer">
+            <p>Interest = 20,000 × 0.09 × 4/12 = <strong>600</strong>. Acceptance: debit notes receivable 20,000; credit accounts receivable 20,000. Collection: debit cash 20,600; credit notes receivable 20,000; credit interest revenue 600. If dishonored: debit accounts receivable 20,600; credit notes receivable 20,000; credit interest revenue 600. Interest revenue is recognized either way.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>5. Receivables are 80,000 and the allowance is 6,000 credit. An account of 2,000 is written off. What is net receivables before and after the write-off? A week later, 500 of that account is collected. Give both recovery entries.</summary>
+          <div class="answer">
+            <p>Before: 80,000 − 6,000 = 74,000. After: receivables 78,000, allowance 4,000, net still <strong>74,000</strong>. No bad debt expense on the write-off. Recovery: debit accounts receivable 500, credit allowance 500; then debit cash 500, credit accounts receivable 500.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer">Chapter 5 follows the cash and receivables lecture. Hunt, Bob Pot, HoHo, and the aging schedules use the slides’ amounts.</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

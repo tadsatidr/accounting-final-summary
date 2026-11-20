@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal entries · FA1 final</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Ch 5 Cash</a>
+      <a href="chapter-6.html">Ch 6 Inventory</a>
+      <a href="chapter-7.html">Ch 7 PPE</a>
+      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section class="section">
+    <p class="kicker">Cheat sheet</p>
+    <h1>Journal-entry reference</h1>
+    <p>Credits are indented. Amounts are the lecture illustrations when a slide gives one; otherwise the line shows the accounts only. Worked numbers and the reasons sit on the chapter pages.</p>
+  </section>
+
+  <section class="section" id="cash">
+    <h2>Cash · bank reconciliation</h2>
+    <p>Only book-side items. Deposits in transit and outstanding checks are not journalized.</p>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">3,260</td><td></td></tr>
+        <tr><td class="acct cr">Interest revenue</td><td></td><td class="num">60</td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">3,200</td></tr>
+      </tbody>
+      <caption>Hunt receipts already on the bank statement. A customer deposit credits the receivable.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Miscellaneous expense (service charge)</td><td class="num">7</td><td></td></tr>
+        <tr><td class="acct">Custodial expense (bank transfer)</td><td class="num">425</td><td></td></tr>
+        <tr><td class="acct">Wage expense (check recorded too low)</td><td class="num">180</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">612</td></tr>
+      </tbody>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Accounts receivable</td><td class="num">NSF</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">NSF</td></tr>
+      </tbody>
+      <caption>NSF check. Hunt had none. The deposit is reversed and the claim against the customer returns.</caption>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>Receivables</h2>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">3,000</td><td></td></tr>
+        <tr><td class="acct">Accounts receivable</td><td class="num">2,000</td><td></td></tr>
+        <tr><td class="acct cr">Sales revenue</td><td></td><td class="num">5,000</td></tr>
+        <tr><td class="acct">Cost of goods sold</td><td class="num">4,000</td><td></td></tr>
+        <tr><td class="acct cr">Inventory</td><td></td><td class="num">4,000</td></tr>
+      </tbody>
+      <caption>Sale, cash and credit, plus the matching cost entry.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">1,960</td><td></td></tr>
+        <tr><td class="acct">Sales discounts</td><td class="num">40</td><td></td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">2,000</td></tr>
+      </tbody>
+      <caption>Collection inside 2/10, n/30. Sales discounts is contra-revenue.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Sales returns and allowances</td><td class="num">1,500</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">1,000</td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">500</td></tr>
+        <tr><td class="acct">Inventory</td><td class="num">1,200</td><td></td></tr>
+        <tr><td class="acct cr">Cost of goods sold</td><td></td><td class="num">1,200</td></tr>
+      </tbody>
+      <caption>Return of goods. Contra-revenue for the selling price, and an inventory reinstatement for the cost.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Bad debt expense</td><td class="num">estimate</td><td></td></tr>
+        <tr><td class="acct cr">Allowance for bad debts</td><td></td><td class="num">estimate</td></tr>
+      </tbody>
+      <caption>Expected-loss estimate. The amount is the full target only when the allowance has no balance. Otherwise it is the gap.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Allowance for bad debts</td><td class="num">15,000</td><td></td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">15,000</td></tr>
+      </tbody>
+      <caption>Write-off. No expense. Net receivables unchanged.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Accounts receivable</td><td class="num">15,000</td><td></td></tr>
+        <tr><td class="acct cr">Allowance for bad debts</td><td></td><td class="num">15,000</td></tr>
+        <tr><td class="acct">Cash</td><td class="num">15,000</td><td></td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">15,000</td></tr>
+      </tbody>
+      <caption>Recovery: reinstate, then collect. Two entries.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Notes receivable</td><td class="num">5,000</td><td></td></tr>
+        <tr><td class="acct cr">Accounts receivable</td><td></td><td class="num">5,000</td></tr>
+      </tbody>
+      <caption>Note accepted in settlement of an open account.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash (or Accounts receivable if dishonored)</td><td class="num">5,150</td><td></td></tr>
+        <tr><td class="acct cr">Notes receivable</td><td></td><td class="num">5,000</td></tr>
+        <tr><td class="acct cr">Interest revenue</td><td></td><td class="num">150</td></tr>
+      </tbody>
+      <caption>Maturity. Interest is recognized whether the cash arrives or the note is dishonored.</caption>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>Inventory</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Event</th><th>Perpetual</th><th>Periodic</th></tr></thead>
+      <tbody>
+        <tr><td>Purchase on account</td><td>Dr Inventory<br>Cr Accounts payable</td><td>Dr Purchases<br>Cr Accounts payable</td></tr>
+        <tr><td>Freight-in</td><td>Dr Inventory<br>Cr Cash</td><td>Dr Freight-in<br>Cr Cash</td></tr>
+        <tr><td>Purchase return</td><td>Dr Accounts payable<br>Cr Inventory</td><td>Dr Accounts payable<br>Cr Purchase returns</td></tr>
+        <tr><td>Pay within the discount period</td><td>Dr Accounts payable<br>Cr Inventory (discount)<br>Cr Cash</td><td>Dr Accounts payable<br>Cr Purchase discounts<br>Cr Cash</td></tr>
+        <tr><td>Sale on account</td><td>Dr Accounts receivable<br>Cr Sales<br>Dr Cost of goods sold<br>Cr Inventory</td><td>Dr Accounts receivable<br>Cr Sales<br>No cost entry yet</td></tr>
+      </tbody>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Inventory (net purchases)</td><td class="num">15,876</td><td></td></tr>
+        <tr><td class="acct">Purchase returns</td><td class="num">300</td><td></td></tr>
+        <tr><td class="acct">Purchase discounts</td><td class="num">194</td><td></td></tr>
+        <tr><td class="acct cr">Purchases</td><td></td><td class="num">15,400</td></tr>
+        <tr><td class="acct cr">Freight-in</td><td></td><td class="num">970</td></tr>
+      </tbody>
+      <caption>Periodic closing, step 1. Temporary purchase accounts move into Inventory.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cost of goods sold</td><td class="num">goods available − count</td><td></td></tr>
+        <tr><td class="acct cr">Inventory</td><td></td><td class="num">same</td></tr>
+      </tbody>
+      <caption>Periodic closing, step 2. With a count of 5,950 the credit is 9,926, and shrinkage is inside that number.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cost of goods sold</td><td class="num">826</td><td></td></tr>
+        <tr><td class="acct cr">Inventory</td><td></td><td class="num">826</td></tr>
+      </tbody>
+      <caption>Perpetual shrinkage only. Periodic: no entry.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Raw materials inventory</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Cash or accounts payable</td><td></td><td class="num">XX</td></tr>
+        <tr><td class="acct">Work in process inventory</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Raw materials (DM)</td><td></td><td class="num">XX</td></tr>
+        <tr><td class="acct cr">Cash or wages payable (DL)</td><td></td><td class="num">XX</td></tr>
+        <tr><td class="acct cr">Supplies (overhead)</td><td></td><td class="num">XX</td></tr>
+        <tr><td class="acct">Finished goods inventory</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Work in process inventory</td><td></td><td class="num">XX</td></tr>
+        <tr><td class="acct">Cost of goods sold</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Finished goods inventory</td><td></td><td class="num">XX</td></tr>
+      </tbody>
+      <caption>Manufacturer flow: buy, put into process, finish, sell.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cost of goods sold</td><td class="num">write-down</td><td></td></tr>
+        <tr><td class="acct cr">Allowance for inventory write-down</td><td></td><td class="num">write-down</td></tr>
+      </tbody>
+      <caption>Lower of cost or NRV. Notebooks 50,000. Demonstrator car 2,500. The allowance is contra-inventory.</caption>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>PPE and intangibles</h2>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Truck (or other asset), at capitalized cost</td><td class="num">15,096</td><td></td></tr>
+        <tr><td class="acct cr">Cash, or cash and debt</td><td></td><td class="num">15,096</td></tr>
+      </tbody>
+      <caption>Acquisition. If 12,000 is borrowed: credit debt 12,000 and cash 3,096. The asset stays 15,096.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Land</td><td class="num">900,000</td><td></td></tr>
+        <tr><td class="acct">Building</td><td class="num">2,700,000</td><td></td></tr>
+        <tr><td class="acct cr">Cash (or cash and note payable)</td><td></td><td class="num">3,600,000</td></tr>
+      </tbody>
+      <caption>Lump-sum purchase, allocated by relative fair value. Financed version: credit cash 1,000,000 and note payable 2,600,000.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Repair expense</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">XX</td></tr>
+      </tbody>
+      <caption>Ordinary repairs. An improvement is instead debited to the asset.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Depreciation expense</td><td class="num">XX</td><td></td></tr>
+        <tr><td class="acct cr">Accumulated depreciation</td><td></td><td class="num">XX</td></tr>
+      </tbody>
+      <caption>Same shape for straight-line, units of production, and declining balance. Land is never depreciated.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Amortization expense</td><td class="num">25,000</td><td></td></tr>
+        <tr><td class="acct cr">Accumulated amortization</td><td></td><td class="num">25,000</td></tr>
+      </tbody>
+      <caption>Definite-life intangible. Patent 25,000; five-year license 8,000. No entry if the life is indefinite.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Inventory</td><td class="num">220,000</td><td></td></tr>
+        <tr><td class="acct">Long-term operating assets</td><td class="num">110,000</td><td></td></tr>
+        <tr><td class="acct">Other assets</td><td class="num">10,000</td><td></td></tr>
+        <tr><td class="acct">Goodwill</td><td class="num">80,000</td><td></td></tr>
+        <tr><td class="acct cr">Liabilities</td><td></td><td class="num">20,000</td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">400,000</td></tr>
+      </tbody>
+      <caption>Acquisition of a business. Goodwill is not amortized.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Impairment loss</td><td class="num">75,000</td><td></td></tr>
+        <tr><td class="acct cr">Accumulated impairment loss</td><td></td><td class="num">75,000</td></tr>
+      </tbody>
+      <caption>Record current depreciation first if it is not yet on the books. Later depreciation uses the new carrying amount.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash (proceeds)</td><td class="num"></td><td></td></tr>
+        <tr><td class="acct">Accumulated depreciation</td><td class="num">to date</td><td></td></tr>
+        <tr><td class="acct">Loss, if book value exceeds proceeds</td><td class="num"></td><td></td></tr>
+        <tr><td class="acct cr">Asset, at cost</td><td></td><td class="num"></td></tr>
+        <tr><td class="acct cr">Cash, if paid to remove the asset</td><td></td><td class="num"></td></tr>
+        <tr><td class="acct cr">Gain, if proceeds exceed book value</td><td></td><td class="num"></td></tr>
+      </tbody>
+      <caption>Disposal, after depreciation has been updated to the disposal date. Use only the lines the facts require. Computer sold for 600 after four years: debit accumulated depreciation 12,000, cash 600, and loss 2,400; credit computer 15,000.</caption>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>Liabilities</h2>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">100,000</td><td></td></tr>
+        <tr><td class="acct cr">Notes payable</td><td></td><td class="num">100,000</td></tr>
+      </tbody>
+      <caption>1 November borrowing.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Interest expense</td><td class="num">2,000</td><td></td></tr>
+        <tr><td class="acct cr">Interest payable</td><td></td><td class="num">2,000</td></tr>
+      </tbody>
+      <caption>31 December accrual, two months. On 30 April, the same shape for the next four months, amount 4,000.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Interest payable</td><td class="num">6,000</td><td></td></tr>
+        <tr><td class="acct">Notes payable</td><td class="num">100,000</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">106,000</td></tr>
+      </tbody>
+      <caption>Payment at maturity, after the new interest has been accrued.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Warranty expense</td><td class="num">2,000</td><td></td></tr>
+        <tr><td class="acct cr">Warranty provision (or liability)</td><td></td><td class="num">2,000</td></tr>
+        <tr><td class="acct">Warranty provision</td><td class="num">850</td><td></td></tr>
+        <tr><td class="acct cr">Supplies</td><td></td><td class="num">800</td></tr>
+        <tr><td class="acct cr">Wages payable</td><td></td><td class="num">50</td></tr>
+      </tbody>
+      <caption>Estimate at sale, then the actual repair. Starbucks uses the same estimate shape for 150,000.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">100,000</td><td></td></tr>
+        <tr><td class="acct cr">Mortgage payable</td><td></td><td class="num">100,000</td></tr>
+        <tr><td class="acct">Mortgage payable</td><td class="num">67.09</td><td></td></tr>
+        <tr><td class="acct">Interest expense</td><td class="num">666.67</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">733.76</td></tr>
+      </tbody>
+      <caption>Borrow on a mortgage, then the first monthly payment.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">100,000</td><td></td></tr>
+        <tr><td class="acct cr">Bonds payable</td><td></td><td class="num">100,000</td></tr>
+        <tr><td class="acct">Interest expense</td><td class="num">5,000</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">5,000</td></tr>
+      </tbody>
+      <caption>Issued at par, then each interest date. Expense equals cash.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">96,535</td><td></td></tr>
+        <tr><td class="acct">Bond discount</td><td class="num">3,465</td><td></td></tr>
+        <tr><td class="acct cr">Bonds payable</td><td></td><td class="num">100,000</td></tr>
+        <tr><td class="acct">Interest expense</td><td class="num">5,792</td><td></td></tr>
+        <tr><td class="acct cr">Bond discount</td><td></td><td class="num">792</td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">5,000</td></tr>
+      </tbody>
+      <caption>Issued at a discount, then the first effective-interest entry. Crediting the discount raises book value.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Cash</td><td class="num">103,630</td><td></td></tr>
+        <tr><td class="acct cr">Bond premium</td><td></td><td class="num">3,630</td></tr>
+        <tr><td class="acct cr">Bonds payable</td><td></td><td class="num">100,000</td></tr>
+        <tr><td class="acct">Interest expense</td><td class="num">4,145</td><td></td></tr>
+        <tr><td class="acct">Bond premium</td><td class="num">855</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">5,000</td></tr>
+      </tbody>
+      <caption>Issued at a premium, then the first effective-interest entry. Debiting the premium lowers book value.</caption>
+    </table></div>
+    <div class="table-wrap"><table class="je">
+      <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+      <tbody>
+        <tr><td class="acct">Bonds payable</td><td class="num">100,000</td><td></td></tr>
+        <tr><td class="acct cr">Cash</td><td></td><td class="num">100,000</td></tr>
+      </tbody>
+      <caption>Retirement at maturity. Same entry at par, at a discount, or at a premium. The last interest payment is a separate entry.</caption>
+    </table></div>
+  </section>
+</main>
+<footer class="footer">Entry reference for Financial Accounting 1/2026, chapters 5–8.</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
