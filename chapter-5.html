@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chapter 5 · Cash and receivables · FA1 final</title>
+<title>Part 1 · Cash and Receivables · FA1 final</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,15 +16,21 @@
     <label class="nav-btn" for="nav-toggle">Menu</label>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="chapter-5.html">Ch 5 Cash</a>
-      <a href="chapter-6.html">Ch 6 Inventory</a>
-      <a href="chapter-7.html">Ch 7 PPE</a>
-      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="chapter-5.html">Part 1 Cash</a>
+      <a href="chapter-6.html">Part 2 Inventories</a>
+      <a href="chapter-7.html">Part 3 PPE</a>
+      <a href="chapter-8.html">Part 4 Liabilities</a>
       <a href="formulas.html">Formulas</a>
       <a href="journal-entries.html">Journal entries</a>
     </nav>
   </div>
 </header>
+<div class="scope">
+  <div class="scope-inner">
+    <p><strong>Exam scope.</strong> Official final-exam outline (chapters 5–8):</p>
+    <p>Part 1: Cash and Receivables — anything in Ch. 5 might be on the final. Part 2: Inventories — anything in Ch. 6 might be on the final. Part 3: PPE and Intangible Assets — anything in Ch. 7 might be on the final. Part 4: Liabilities — anything in Ch. 8 might be on the final. You will not have to calculate bond prices or mortgage payments.</p>
+  </div>
+</div>
 <main id="main" class="wrap">
   <div class="layout">
     <aside class="toc">
@@ -40,14 +46,15 @@
       <a href="#aging">Aging</a>
       <a href="#notes">Notes receivable</a>
       <a href="#ratios">Receivables ratios</a>
+      <a href="#exercises">Lecture exercises</a>
       <a href="#traps">Exam traps</a>
       <a href="#practice">Practice</a>
     </aside>
     <div>
       <section class="section" id="outcomes">
-        <p class="kicker">Chapter 5</p>
-        <h1>Cash and receivables</h1>
-        <p>The slides do not print a formal learning-outcome list for this chapter. These are the tasks the deck actually trains.</p>
+        <p class="kicker">Part 1 · Chapter 5</p>
+        <h1>Cash and Receivables</h1>
+        <p>Anything in Chapter 5 might be on the final. The slides do not print a formal learning-outcome list. These are the tasks the deck actually trains, including the end-of-chapter exercises.</p>
         <ul>
           <li>State the three cash-management responsibilities.</li>
           <li>Reconcile the bank balance to the book balance and journalize only the book side.</li>
@@ -255,9 +262,22 @@
             </tbody>
           </table>
         </div>
-        <div class="callout note">
-          <strong class="label">Credit-card discounts, from the chapter exercises</strong>
-          Exercises 2 and 3 tell you to treat credit-card discounts as selling, general, and administrative expense, while sales discounts and sales returns stay contra-revenue. Net sales then excludes sales discounts and returns, and does not subtract the card fee.
+        <div class="callout rule">
+          <strong class="label">Gross method, which is the method in every lecture entry</strong>
+          Record the sale at the full invoice price. Record Sales discounts only when the customer actually pays inside the discount window. An invoice that is still unpaid at the period end is still in gross sales, with no discount subtracted yet.
+        </div>
+        <h3>Credit-card sales</h3>
+        <p>Exercises 2 and 3 treat a credit-card fee as selling, general, and administrative expense, not as a sales discount. Net sales does not subtract it. On a $3,000 Visa sale with a 2% fee:</p>
+        <div class="table-wrap">
+          <table class="je">
+            <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+            <tbody>
+              <tr><td class="acct">Cash</td><td class="num">2,940</td><td class="num"></td></tr>
+              <tr><td class="acct">Credit-card discount expense</td><td class="num">60</td><td class="num"></td></tr>
+              <tr><td class="acct cr">Sales revenue</td><td class="num"></td><td class="num">3,000</td></tr>
+            </tbody>
+            <caption>The 3,000 stays in gross sales. The 60 is an operating expense.</caption>
+          </table>
         </div>
       </section>
 
@@ -383,10 +403,43 @@
           <p class="eq">Bad debt expense = 35,294 − 15,594 = 19,700</p>
         </div>
         <p>The slide’s allowance rollforward is: beginning 29,700 − write-offs 14,106 + adjustment 19,700 = ending 35,294.</p>
-        <div class="callout rule">
-          <strong class="label">Balance sheet and income statement</strong>
-          Accounts receivable is reported less the allowance. The difference is the net amount expected to be collected. Bad debt expense is on the income statement. A write-off changes neither net receivables nor bad debt expense.
+        <h3>How the statements look · Hot Pot Bakery slide</h3>
+        <p>The presentation slide puts the allowance on the balance sheet and bad debt expense in operating expenses. The illustrative amounts are receivables $10,000, allowance $500, net receivables $9,500, sales revenue $40,000, and bad debt expense $400.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Balance sheet</th><th class="num"></th><th>Statement of comprehensive income</th><th class="num"></th></tr></thead>
+            <tbody>
+              <tr><td>Accounts receivable</td><td class="num">10,000</td><td>Sales revenue</td><td class="num">40,000</td></tr>
+              <tr><td>Less: allowance for bad debts</td><td class="num">500</td><td>Operating expenses</td><td class="num"></td></tr>
+              <tr class="total"><td>Accounts receivable, net</td><td class="num">9,500</td><td>Bad debt expense</td><td class="num">400</td></tr>
+            </tbody>
+          </table>
         </div>
+        <p>A write-off changes neither net receivables nor bad debt expense. The expense was recorded when the allowance was estimated.</p>
+        <h3>Year-long T-accounts · Durney’s Outdoor Outfitters, Exercise 4</h3>
+        <p>Prior year-end: gross receivables $48,067, allowance $8,384, net $39,683. This year: credit sales $304,423, collections $289,850, write-offs $6,969, and a bad-debt adjustment of $4,685. Build both T-accounts before you report the statements.</p>
+        <div class="formula">
+          <p class="eq">Ending receivables = 48,067 + 304,423 − 289,850 − 6,969 = 55,671</p>
+          <p class="eq">Ending allowance = 8,384 − 6,969 + 4,685 = 6,100</p>
+          <p class="eq">Net receivables = 55,671 − 6,100 = 49,571</p>
+        </div>
+        <p>Income statement: bad debt expense $4,685, with the other operating expenses. Balance sheet: accounts receivable $55,671 less allowance $6,100.</p>
+        <h3>Two more aging exercises from the slides</h3>
+        <p>Same rule as the lecture schedules. Required allowance is the sum of bucket × rate. Expense is that target minus the credit balance already in the allowance.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Casilda (Exercise 6)</th><th>Chou (Exercise 7)</th></tr></thead>
+            <tbody>
+              <tr><td>Buckets</td><td>50,000 × 3% = 1,500<br>14,000 × 12% = 1,680<br>4,000 × 30% = 1,200</td><td>295,000 × 2.5% = 7,375<br>55,000 × 11% = 6,050<br>18,000 × 30% = 5,400</td></tr>
+              <tr><td>Required allowance</td><td>4,380</td><td>18,825</td></tr>
+              <tr><td>Existing credit balance</td><td>200</td><td>100</td></tr>
+              <tr><td>Bad debt expense</td><td>4,180</td><td>18,725</td></tr>
+              <tr><td>Gross receivables</td><td>68,000</td><td>368,000</td></tr>
+              <tr class="total"><td>Net receivables</td><td>63,620</td><td>349,175</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Entry for Casilda: debit bad debt expense 4,180; credit allowance 4,180. Chou is the same shape for 18,725. Report gross receivables, the allowance, and the net amount.</p>
       </section>
 
       <section class="section" id="notes">
@@ -448,6 +501,43 @@
         </div>
       </section>
 
+      <section class="section" id="exercises">
+        <h2>Lecture exercises on net sales, worked</h2>
+        <p>These three problems are printed at the end of the chapter. Count the days from the invoice date. A discount is recorded only if collection falls inside the discount window, and only on goods the customer kept.</p>
+        <h3>Exercise 1 · Hancock, two months ended 28 February</h3>
+        <ul>
+          <li>6 Jan: S. Green, $1,500, terms 2/10, n/30. Collected 14 Jan, eight days later. Discount = 1,500 × 0.02 = $30.</li>
+          <li>6 Jan: M. Munoz, $850, terms 2/10, n/30. Collected 2 Feb, well after ten days. No discount.</li>
+          <li>28 Feb: R. Reynolds, $400, terms 2/10, n/45. Still unpaid when the period ends. No discount yet. The $400 is still in gross sales.</li>
+        </ul>
+        <div class="formula">
+          <p class="eq">Gross sales = 1,500 + 850 + 400 = 2,750</p>
+          <p class="eq">Net sales = 2,750 − 30 = 2,720</p>
+        </div>
+        <h3>Exercise 2 · OceanView, two months ended 31 August</h3>
+        <ul>
+          <li>12 July: Customer R, Visa $3,000, fee 2% = $60. The fee is an expense. Sales stay $3,000.</li>
+          <li>15 July: Customer S, $9,000, terms 3/10, n/30. Collected 23 July, eight days later. Discount = 9,000 × 0.03 = $270.</li>
+          <li>20 July: Customer T, $4,000, terms 3/10, n/30. Collected 25 August, after the ten days. No discount.</li>
+        </ul>
+        <div class="formula">
+          <p class="eq">Gross sales = 3,000 + 9,000 + 4,000 = 16,000</p>
+          <p class="eq">Net sales = 16,000 − 270 = 15,730</p>
+          <p>The $60 card fee is not subtracted here. It is selling, general, and administrative expense.</p>
+        </div>
+        <h3>Exercise 3 · Bennett, two months ended 31 December</h3>
+        <ul>
+          <li>20 Nov: Customer B, $5,500, terms 3/10, n/30. Paid 20 Dec, thirty days later. Outside the ten-day window. No discount.</li>
+          <li>25 Nov: Customer C, Visa $400, fee 2% = $8 expense. Sales stay $400.</li>
+          <li>28 Nov: Customer D, 10 items, $9,000, terms 3/10, n/30. On 29 Nov one defective item is returned, so the credit is $900 and the remaining balance is $8,100.</li>
+          <li>6 Dec: D pays the balance, eight days after the invoice. Discount = 8,100 × 0.03 = $243. Do not take 3% of the original $9,000.</li>
+        </ul>
+        <div class="formula">
+          <p class="eq">Gross sales = 5,500 + 400 + 9,000 = 14,900</p>
+          <p class="eq">Net sales = 14,900 − 900 − 243 = 13,757</p>
+        </div>
+      </section>
+
       <section class="section" id="traps">
         <h2>Exam traps</h2>
         <ul>
@@ -455,7 +545,10 @@
           <li>A voided check is not an outstanding check.</li>
           <li>Direction of a company error. Recording a $420 wage check as $240 overstates cash by $180. The correction credits cash.</li>
           <li>A customer’s direct deposit clears a receivable. The Hunt entry credits accounts receivable, not sales.</li>
-          <li>Sales discounts and sales returns are contra-revenue. The allowance for bad debts is a contra-asset. Credit-card fees, in the exercises, are operating expenses.</li>
+          <li>Sales discounts and sales returns are contra-revenue. The allowance for bad debts is a contra-asset. A credit-card fee is an operating expense and is not deducted in net sales.</li>
+          <li>Under the gross method, do not subtract a discount on an invoice the customer has not yet paid. Hancock’s 28 February sale of $400 is still in gross sales in full.</li>
+          <li>After a partial return, the discount rate applies only to the goods kept. Bennett’s discount is 3% of $8,100, not 3% of $9,000.</li>
+          <li>Count the days. A collection on day 30 of an n/30 invoice is not inside a 10-day discount window.</li>
           <li>After a return, the cash discount applies only to goods the customer keeps. In the bakery statement the discount is 30, not 40, and not 40 + 10.</li>
           <li>A write-off does not change net receivables and does not record bad debt expense.</li>
           <li>Under percentage-of-receivables or aging, expense equals the <em>gap</em> between the required allowance and the allowance balance already on the books. Subtract write-offs before you measure that gap. In the second aging example the expense is 19,700, not 35,294 and not 35,294 − 29,700.</li>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chapter 8 · Liabilities · FA1 final</title>
+<title>Part 4 · Liabilities · FA1 final</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,15 +16,21 @@
     <label class="nav-btn" for="nav-toggle">Menu</label>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="chapter-5.html">Ch 5 Cash</a>
-      <a href="chapter-6.html">Ch 6 Inventory</a>
-      <a href="chapter-7.html">Ch 7 PPE</a>
-      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="chapter-5.html">Part 1 Cash</a>
+      <a href="chapter-6.html">Part 2 Inventories</a>
+      <a href="chapter-7.html">Part 3 PPE</a>
+      <a href="chapter-8.html">Part 4 Liabilities</a>
       <a href="formulas.html">Formulas</a>
       <a href="journal-entries.html">Journal entries</a>
     </nav>
   </div>
 </header>
+<div class="scope">
+  <div class="scope-inner">
+    <p><strong>Exam scope.</strong> Official final-exam outline (chapters 5–8):</p>
+    <p>Part 1: Cash and Receivables — anything in Ch. 5 might be on the final. Part 2: Inventories — anything in Ch. 6 might be on the final. Part 3: PPE and Intangible Assets — anything in Ch. 7 might be on the final. Part 4: Liabilities — anything in Ch. 8 might be on the final. You will not have to calculate bond prices or mortgage payments.</p>
+  </div>
+</div>
 <main id="main" class="wrap">
   <div class="layout">
     <aside class="toc">
@@ -48,9 +54,14 @@
     </aside>
     <div>
       <section class="section" id="scope">
-        <p class="kicker">Chapter 8</p>
+        <p class="kicker">Part 4 · Chapter 8</p>
         <h1>Liabilities</h1>
-        <p>The slides do not print a learning-outcome list. The path they actually teach is accounts payable, notes payable and interest across a year-end, provisions and warranties, the probability table for contingencies, mortgages, and bonds issued at par, at a discount, and at a premium, including effective-interest amortization and retirement at maturity.</p>
+        <p>Anything in Chapter 8 might be on the final, except the calculations the outline removes. You will not have to calculate bond prices (present value) or mortgage payments. You are still responsible for the concepts and the entries: issuance at par, discount, or premium when the cash proceeds are given, amortization and interest entries when the amounts or the beginning book value are given, and the split between current and non-current.</p>
+        <div class="callout trap">
+          <strong class="label">Not examined</strong>
+          Do not spend revision time on present-value factors, the Excel PV function, or the Excel PMT function. Those workings are kept below, closed, only so the lecture numbers can be traced. If a question gives you the issue price or the mortgage payment, you use that number.
+        </div>
+        <p>The path the slides teach is accounts payable, notes payable and interest across a year-end, provisions and warranties, the probability table for contingencies, mortgages, and bonds issued at par, at a discount, and at a premium, including effective-interest amortization and retirement at maturity.</p>
         <p>For long-term debt the roadmap on the slide is: choose the method of financing, issue the debt, pay interest, amortize a bond premium or discount, and retire the debt.</p>
         <p>A liability, as restated in the chapter, is a present obligation arising from past events, the settlement of which is expected to result in an outflow of resources.</p>
       </section>
@@ -203,7 +214,7 @@
         </ol>
         <p>Those two amounts add up to the unpaid principal. Do not also report the full unpaid principal a second time.</p>
         <h3>McGiven Automobile Company</h3>
-        <p>On 1 January McGiven borrows $100,000 to buy a showroom and pledges the showroom. The mortgage is 8% for 30 years. Monthly payment = PMT(0.08/12, 360, 100000) = <strong>$733.76</strong>, due on 31 January and at each month-end after that.</p>
+        <p>On 1 January McGiven borrows $100,000 to buy a showroom and pledges the showroom. The mortgage is 8% for 30 years. The slides give the monthly payment as <strong>$733.76</strong>, due on 31 January and at each month-end after that. You will not be asked to calculate that payment.</p>
         <div class="formula">
           <p class="eq">Interest, first month = 100,000 × 8% × 1/12 = 666.67</p>
           <p class="eq">Principal, first month = 733.76 − 666.67 = 67.09</p>
@@ -230,9 +241,11 @@
             <caption>31 January, first payment. Only the principal debit reduces the liability.</caption>
           </table>
         </div>
-        <p>The next month’s interest is 99,932.91 × 8% × 1/12 = 666.22, so principal is 733.76 − 666.22 = 67.54. Interest falls and principal rises each month because the balance falls. The slide’s schedule shows the balance after payment 12 as $99,164.70. Principal repaid in the first year is 100,000 − 99,164.70 = 835.30. Payments 359 and 360 are almost entirely principal; the last payment brings the balance to zero.</p>
-        <h3>A second mortgage, computation only</h3>
-        <p>$200,000 borrowed for 20 years at 8% compounded monthly. Payment = PMT(0.08/12, 240, 200000) = <strong>$1,672.88</strong>. First month: interest = 200,000 × 8% × 1/12 = <strong>1,333.33</strong>. Principal = 1,672.88 − 1,333.33 = <strong>339.55</strong>.</p>
+        <p>Interest falls and the principal portion rises each month because the unpaid balance falls. The slide’s schedule shows the balance after 12 payments as $99,164.70. At that year-end the current liability is the principal to be paid over the next year, and the long-term liability is the rest. Those two pieces add to 99,164.70. Do not report 99,164.70 and then also report the next year’s principal on top of it.</p>
+        <details class="not-examined">
+          <summary>Not examined — how the slides got the payment</summary>
+          <p>The $733.76 is Excel PMT(0.08/12, 360, 100000). The next month’s interest on the slide is 99,932.91 × 8% × 1/12 = 666.22, so principal is 733.76 − 666.22 = 67.54. Principal repaid in the first twelve payments is 100,000 − 99,164.70 = 835.30. A second illustration uses PMT(0.08/12, 240, 200000) = $1,672.88 on a $200,000, 20-year, 8% mortgage. First interest = 200,000 × 8% × 1/12 = 1,333.33. First principal = 1,672.88 − 1,333.33 = 339.55. You do not have to reproduce these payment calculations.</p>
+        </details>
       </section>
 
       <section class="section" id="bonds">
@@ -276,23 +289,16 @@
             </tbody>
           </table>
         </div>
-        <p>The running example is an Amazon issue on 1 January 2025. Face $100,000. Coupon 10%. Interest paid each 30 June and 31 December, so the cash coupon is 100,000 × 10% × 1/2 = <strong>$5,000</strong> every period. Maturity is 31 December 2026, which is 4 semiannual periods. Only the market rate changes across the three cases.</p>
+        <p>The running example is an Amazon issue on 1 January 2025. Face $100,000. Coupon 10%. Interest paid each 30 June and 31 December, so the cash coupon is 100,000 × 10% × 1/2 = <strong>$5,000</strong> every period. Maturity is 31 December 2026, four semiannual periods. Only the market rate changes across the three cases. The lecture’s resulting prices, which you should be able to use when they are given, are par $100,000, discount price $96,535, and premium price $103,630.</p>
+        <details class="not-examined">
+          <summary>Not examined — present value of the bond price</summary>
+          <p>The slides discount the principal and the interest annuity at the market rate per period. Par, at 5% for 4 periods: 100,000 × 0.82270 + 5,000 × 3.54595 = 100,000. Discount, at 6%: 100,000 × 0.79209 + 5,000 × 3.46511 = 96,535. Premium, at 4%: 100,000 × 0.85480 + 5,000 × 3.62990 = 103,630. Excel PV is on the slides as well. You will not be asked to calculate these prices.</p>
+        </details>
       </section>
 
       <section class="section" id="par">
         <h2>Bonds issued at par</h2>
-        <p>Investors pay $100,000, so the market rate equals the 10% coupon. Discount at the market rate per period, 10% / 2 = 5%, for 4 periods. The slide uses present-value tables and also shows Excel.</p>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th></th><th>Table factors at 5%, n = 4</th><th class="num">Amount</th></tr></thead>
-            <tbody>
-              <tr><td>Principal</td><td>100,000 × 0.82270</td><td class="num">82,270</td></tr>
-              <tr><td>Interest annuity</td><td>5,000 × 3.54595</td><td class="num">17,730</td></tr>
-              <tr class="total"><td>Issue price</td><td></td><td class="num">100,000</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Excel on the slide: PV(0.10/2, 4, , 100000) = 82,270.25 and PV(0.10/2, 4, 5000) = 17,729.75. Those unrounded pieces also add to 100,000. When the market rate equals the coupon rate, the present value always equals face value.</p>
+        <p>Investors pay $100,000, which is face, because the market rate equals the 10% coupon. Take that price as given. When the market rate equals the coupon rate, the present value equals face. The factor table that produces 100,000 is in the closed note above and is not examined.</p>
         <div class="table-wrap">
           <table class="je">
             <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
@@ -317,18 +323,7 @@
 
       <section class="section" id="discount">
         <h2>Bonds issued at a discount</h2>
-        <p>Same bond, but the market rate on the issue date is 12%. Because 10% is less than 12%, the bonds sell at a discount. Discount at 12% / 2 = 6% for 4 periods.</p>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th></th><th>Table factors at 6%, n = 4</th><th class="num">Amount</th></tr></thead>
-            <tbody>
-              <tr><td>Principal</td><td>100,000 × 0.79209</td><td class="num">79,209</td></tr>
-              <tr><td>Interest annuity</td><td>5,000 × 3.46511</td><td class="num">17,326</td></tr>
-              <tr class="total"><td>Issue price</td><td></td><td class="num">96,535</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Excel: PV(0.12/2, 4, , 100000) = 79,209.37 and PV(0.12/2, 4, 5000) = 17,325.53. The lecture uses the rounded issue price <strong>$96,535</strong>. Discount = 100,000 − 96,535 = <strong>3,465</strong>. Bond discount is a contra-liability. Book value = face − unamortized discount = 100,000 − 3,465 = 96,535 on the issue date.</p>
+        <p>Same bond, but the market rate on the issue date is 12%. Because 10% is less than 12%, the bonds sell at a discount. The lecture’s issue price is <strong>$96,535</strong>. Use it as given. Discount = 100,000 − 96,535 = <strong>3,465</strong>. Bond discount is a contra-liability. Book value = face − unamortized discount = 96,535 on the issue date.</p>
         <div class="table-wrap">
           <table class="je">
             <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
@@ -380,18 +375,7 @@
 
       <section class="section" id="premium">
         <h2>Bonds issued at a premium</h2>
-        <p>Same bond, market rate 8% on the issue date. The coupon is higher than investors demand, so they pay a premium. Discount at 8% / 2 = 4% for 4 periods.</p>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th></th><th>Table factors at 4%, n = 4</th><th class="num">Amount</th></tr></thead>
-            <tbody>
-              <tr><td>Principal</td><td>100,000 × 0.85480</td><td class="num">85,480</td></tr>
-              <tr><td>Interest annuity</td><td>5,000 × 3.62990</td><td class="num">18,150</td></tr>
-              <tr class="total"><td>Issue price</td><td></td><td class="num">103,630</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Excel: PV(0.08/2, 4, , 100000) = 85,480.42 and PV(0.08/2, 4, 5000) = 18,149.48. The lecture uses <strong>$103,630</strong>. Premium = 103,630 − 100,000 = <strong>3,630</strong>. The premium is added to the liability. Book value = face + unamortized premium.</p>
+        <p>Same bond, market rate 8% on the issue date. The coupon is higher than investors demand, so they pay a premium. The lecture’s issue price is <strong>$103,630</strong>. Use it as given. Premium = 103,630 − 100,000 = <strong>3,630</strong>. The premium is added to the liability. Book value = face + unamortized premium.</p>
         <div class="table-wrap">
           <table class="je">
             <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
@@ -480,7 +464,8 @@
           <li>Cash coupon interest uses face × coupon rate per period. Interest expense on a discount or premium uses beginning book value × market rate per period. They are equal only when the bond was issued at par.</li>
           <li>Bonds payable is credited at face at issuance. The discount is a separate debit. The premium is a separate credit. Do not credit bonds payable for 96,535 or 103,630.</li>
           <li>A discount is a contra-liability. Crediting it at each interest date increases book value. A premium is added to the liability. Debiting it decreases book value.</li>
-          <li>Use the market rate per period and the number of periods. For the Amazon bond that is 6%, 5%, or 4% for n = 4, not 12%, 10%, or 8% for n = 2.</li>
+          <li>You will not be asked to compute a bond’s issue price or a mortgage payment. If the cash proceeds are 96,535, the discount is 3,465. If the payment is 733.76, only the principal portion reduces the mortgage.</li>
+          <li>When you are given beginning book value, interest expense is that balance times the market rate per period. Cash interest is still face times the coupon rate per period. For the Amazon bond those period rates are 6%, 5%, or 4%, not the annual rates applied once.</li>
           <li>The maturity payment is face value, $100,000, in all three cases. The last interest entry is separate.</li>
           <li>Times interest earned adds back interest and income tax before dividing by interest. A negative ratio is possible and, in the Amazon box, is shown in parentheses.</li>
         </ul>
@@ -511,20 +496,32 @@
           </div>
         </details>
         <details class="qa">
-          <summary>4. A 100,000 face bond, coupon 8%, pays interest semiannually and has 4 periods left. It is issued when the market rate is 10% per year. Without present-value tables, state whether it is issued at par, a discount, or a premium, what the cash interest each period is, and the shape of the first interest entry.</summary>
+          <summary>4. A 100,000 face bond, coupon 8%, pays interest semiannually. The market rate on the issue date is 10%. State whether it is issued at par, a discount, or a premium, and describe the interest entry. Do not calculate the issue price. Cash proceeds, if you need them for an entry, would be given.</summary>
           <div class="answer">
-            <p>Market 10% is above the coupon 8%, so the bond is issued at a <strong>discount</strong>. Cash interest each period = 100,000 × 8% × 1/2 = <strong>4,000</strong>. The market rate per period is 5%. Interest expense = beginning book value × 5%, which is more than 4,000. Debit interest expense for that larger amount; credit bond discount for the difference; credit cash 4,000. Book value rises.</p>
+            <p>The market rate is above the coupon, so the bond is issued at a <strong>discount</strong>. Cash interest each period = 100,000 × 8% × 1/2 = <strong>4,000</strong>. Interest expense uses the given beginning book value times 5% and is larger than 4,000. Debit interest expense; credit bond discount for the difference; credit cash 4,000. Book value rises. You are not asked for the dollar price.</p>
           </div>
         </details>
         <details class="qa">
-          <summary>5. Use the Amazon discount bond. Book value at 1 January 2025 is 96,535. Compute the 30 June 2025 interest entry. Then suppose instead the same face and coupon had been issued at 103,630 when the market rate was 8%. Compute the 30 June 2025 interest entry for that premium case.</summary>
+          <summary>5. The prices are given. Book value at 1 January is 96,535 on the discount bond (market 12%). Write the 30 June interest entry. Then repeat for the premium issue, price given as 103,630 (market 8%).</summary>
           <div class="answer">
             <p>Discount: expense = 96,535 × 0.06 = 5,792. Debit interest expense 5,792; credit bond discount 792; credit cash 5,000. Book value becomes 97,327.</p>
             <p>Premium: expense = 103,630 × 0.04 = 4,145. Debit interest expense 4,145; debit bond premium 855; credit cash 5,000. Book value becomes 102,775.</p>
           </div>
         </details>
         <details class="qa">
-          <summary>6. Net income is 40,000, interest expense is 8,000, and income tax expense is 12,000. Compute times interest earned. What does a higher result mean?</summary>
+          <summary>6. The mortgage payment is given as 733.76. The unpaid principal is 100,000 and the annual rate is 8%. Split the first payment into interest and principal, and say how much of the liability is current versus long-term in principle. Do not calculate the payment.</summary>
+          <div class="answer">
+            <p>Interest = 100,000 × 0.08 × 1/12 = <strong>666.67</strong>. Principal = 733.76 − 666.67 = <strong>67.09</strong>. Debit mortgage payable 67.09; debit interest expense 666.67; credit cash 733.76. Only 67.09 reduces the liability. At year-end, next year’s principal payments are current and the remainder of the unpaid principal is non-current. The two amounts add to the unpaid balance. They are not both added on top of that balance.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>7. Cash proceeds on a 100,000 face bond are given as 96,535. Write the issuance entry. Then write the retirement entry at maturity, after the discount has been fully amortized.</summary>
+          <div class="answer">
+            <p>Issuance: debit cash 96,535; debit bond discount 3,465; credit bonds payable 100,000. Retirement, same at par, discount, or premium: debit bonds payable 100,000; credit cash 100,000. The last interest entry is separate. You were not asked to derive 96,535.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>8. Net income is 40,000, interest expense is 8,000, and income tax expense is 12,000. Compute times interest earned. What does a higher result mean?</summary>
           <div class="answer">
             <p>Times interest earned = (40,000 + 8,000 + 12,000) / 8,000 = 60,000 / 8,000 = <strong>7.5</strong>. The company earned $7.50, before interest and tax, for each $1 of interest. A higher ratio is viewed more favorably.</p>
           </div>
