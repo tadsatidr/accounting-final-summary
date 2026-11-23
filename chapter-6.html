@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chapter 6 · Inventory · FA1 final</title>
+<title>Part 2 · Inventories · FA1 final</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,15 +16,21 @@
     <label class="nav-btn" for="nav-toggle">Menu</label>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="chapter-5.html">Ch 5 Cash</a>
-      <a href="chapter-6.html">Ch 6 Inventory</a>
-      <a href="chapter-7.html">Ch 7 PPE</a>
-      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="chapter-5.html">Part 1 Cash</a>
+      <a href="chapter-6.html">Part 2 Inventories</a>
+      <a href="chapter-7.html">Part 3 PPE</a>
+      <a href="chapter-8.html">Part 4 Liabilities</a>
       <a href="formulas.html">Formulas</a>
       <a href="journal-entries.html">Journal entries</a>
     </nav>
   </div>
 </header>
+<div class="scope">
+  <div class="scope-inner">
+    <p><strong>Exam scope.</strong> Official final-exam outline (chapters 5–8):</p>
+    <p>Part 1: Cash and Receivables — anything in Ch. 5 might be on the final. Part 2: Inventories — anything in Ch. 6 might be on the final. Part 3: PPE and Intangible Assets — anything in Ch. 7 might be on the final. Part 4: Liabilities — anything in Ch. 8 might be on the final. You will not have to calculate bond prices or mortgage payments.</p>
+  </div>
+</div>
 <main id="main" class="wrap">
   <div class="layout">
     <aside class="toc">
@@ -39,13 +45,15 @@
       <a href="#effects">Choosing a method</a>
       <a href="#lcnrv">Lower of cost or NRV</a>
       <a href="#ratios">Turnover and days</a>
+      <a href="#exercises">Lecture exercises</a>
       <a href="#traps">Exam traps</a>
       <a href="#practice">Practice</a>
     </aside>
     <div>
       <section class="section" id="outcomes">
-        <p class="kicker">Chapter 6</p>
-        <h1>Inventory</h1>
+        <p class="kicker">Part 2 · Chapter 6</p>
+        <h1>Inventories</h1>
+        <p>Anything in Chapter 6 might be on the final.</p>
         <p>Learning outcomes printed on the first slide:</p>
         <ul>
           <li>Apply the cost principle to identify the amounts included in inventory and cost of goods sold for typical retailers, wholesalers, and manufacturers.</li>
@@ -242,7 +250,7 @@
         <h3>Manufacturer flow</h3>
         <ol>
           <li>Buy raw materials: debit raw materials inventory, credit cash or accounts payable.</li>
-          <li>Use them. Direct materials, direct labor, and factory overhead move into work in process. Direct labor is the earnings of employees who work directly on the product. Factory overhead is all other manufacturing cost. Debit work in process; credit raw materials, cash or wages payable, and supplies (overhead).</li>
+          <li>Use them. Direct materials, direct labor, and factory overhead move into work in process. Direct labor is the earnings of employees who work directly on the product. Factory overhead is all other manufacturing cost. Debit work in process; credit raw materials, cash or wages payable, and supplies (overhead). Administrative overhead is not a manufacturing cost. The lecture’s multiple-choice item says it is not a component of the cost of manufactured inventory. Selling and administrative expenses are period costs. They are not added to inventory and they are not part of cost of goods sold.</li>
           <li>Finish the goods: debit finished goods, credit work in process.</li>
           <li>Sell them: debit cost of goods sold, credit finished goods. The same equation still computes cost of goods sold.</li>
         </ol>
@@ -381,6 +389,64 @@
         <p>The slide reads Caterpillar’s 118.5 days as inventory moving more slowly through production to the consumer. Costco turns inventory much faster. Compare within a similar business; a manufacturer and a retailer will not share one “good” number.</p>
       </section>
 
+      <section class="section" id="exercises">
+        <h2>Lecture exercises, worked</h2>
+        <h3>Cost of goods sold, and what a method changes</h3>
+        <p>Ending inventory $24,000, sales $250,000, beginning inventory $30,000, selling and administrative expenses $70,000, purchases $90,000.</p>
+        <div class="formula">
+          <p class="eq">Cost of goods sold = 30,000 + 90,000 − 24,000 = 96,000</p>
+          <p>The $70,000 of selling and administrative expenses is not in that computation. The printed choices are 86,000, 94,000, 96,000, and 84,000. The answer is 96,000.</p>
+        </div>
+        <p>The next item asks what the inventory costing method affects: the balance sheet, the income statement, the statement of retained earnings, or all of them. It affects inventory, cost of goods sold, net income, and therefore retained earnings. The answer on the slide’s list is all of the above. Cash paid to suppliers does not change with the method. Income tax paid can.</p>
+        <h3>FIFO with a short unit list</h3>
+        <p>Beginning inventory 10 units at $20. First purchase 35 at $22. Second purchase 40 at $24. Sold 50 units.</p>
+        <div class="formula">
+          <p class="eq">FIFO cost of goods sold = 10×20 + 35×22 + 5×24 = 200 + 770 + 120 = 1,090</p>
+        </div>
+        <p>The other printed choices are 1,060, 1,180, and 1,200. Ending inventory is the newest 35 units: (40 − 5) × 24 = 840. Goods available = 200 + 770 + 960 = 1,930, and 1,930 − 1,090 = 840.</p>
+        <h3>Missing amounts, Exercise 5</h3>
+        <p>Use sales − cost of goods sold = gross profit, and gross profit − expenses = pretax income. Cost of goods sold = beginning inventory + purchases − ending inventory. Goods available = beginning inventory + purchases. Case B is easiest from the bottom.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th class="num">Case A</th><th class="num">Case B</th><th class="num">Case C</th></tr></thead>
+            <tbody>
+              <tr><td>Net sales</td><td class="num">7,500</td><td class="num">4,800</td><td class="num">5,050</td></tr>
+              <tr><td>Beginning inventory</td><td class="num">11,200</td><td class="num">7,000</td><td class="num">4,000</td></tr>
+              <tr><td>Purchases</td><td class="num">4,500</td><td class="num">8,050</td><td class="num">9,500</td></tr>
+              <tr><td>Goods available</td><td class="num">15,700</td><td class="num">15,050</td><td class="num">13,500</td></tr>
+              <tr><td>Ending inventory</td><td class="num">9,000</td><td class="num">11,050</td><td class="num">9,300</td></tr>
+              <tr><td>Cost of goods sold</td><td class="num">6,700</td><td class="num">4,000</td><td class="num">4,200</td></tr>
+              <tr><td>Gross profit</td><td class="num">800</td><td class="num">800</td><td class="num">850</td></tr>
+              <tr><td>Expenses</td><td class="num">300</td><td class="num">1,000</td><td class="num">700</td></tr>
+              <tr class="total"><td>Pretax income (loss)</td><td class="num">500</td><td class="num">(200)</td><td class="num">150</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Case B expenses = 800 − (−200) = 1,000. Case B sales = 800 + 4,000 = 4,800. Case B purchases = 15,050 − 7,000 = 8,050. Case C ending inventory = 13,500 − 4,200 = 9,300. Case C gross profit = 5,050 − 4,200 = 850.</p>
+        <h3>Hamilton, periodic FIFO and average, Exercise 6</h3>
+        <p>Prices are falling in this exercise, unlike the seven-unit illustration. Prior inventory 2,000 units at $5. 21 March purchase 6,000 at $4. 1 August purchase 4,000 at $2. Ending count 3,000 units, so 9,000 were sold. Goods available cost 10,000 + 24,000 + 8,000 = $42,000.</p>
+        <div class="formula">
+          <p class="eq">FIFO ending inventory = 3,000 × $2 = 6,000. FIFO cost of goods sold = 42,000 − 6,000 = 36,000.</p>
+          <p class="eq">Average cost = 42,000 / 12,000 = $3.50. Ending inventory = 3,000 × 3.50 = 10,500. Cost of goods sold = 9,000 × 3.50 = 31,500.</p>
+        </div>
+        <p>With falling prices, FIFO puts the older, more expensive units into cost of goods sold. FIFO income is lower than average-cost income here. That is the reverse of the rising-price comparison table, where FIFO had the highest income.</p>
+        <h3>H.T. Tan, lower of cost or NRV, item by item, Exercise 7</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th class="num">Qty</th><th class="num">Cost</th><th class="num">NRV</th><th class="num">Lower</th><th class="num">Total</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td class="num">50</td><td class="num">15</td><td class="num">12</td><td class="num">12</td><td class="num">600</td></tr>
+              <tr><td>B</td><td class="num">80</td><td class="num">30</td><td class="num">40</td><td class="num">30</td><td class="num">2,400</td></tr>
+              <tr><td>C</td><td class="num">10</td><td class="num">48</td><td class="num">52</td><td class="num">48</td><td class="num">480</td></tr>
+              <tr><td>D</td><td class="num">70</td><td class="num">25</td><td class="num">30</td><td class="num">25</td><td class="num">1,750</td></tr>
+              <tr><td>E</td><td class="num">350</td><td class="num">10</td><td class="num">5</td><td class="num">5</td><td class="num">1,750</td></tr>
+              <tr class="total"><td>Inventory to report</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">6,980</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Cost before the write-down is 750 + 2,400 + 480 + 1,750 + 3,500 = 8,880. The write-down is 8,880 − 6,980 = 1,900, all from A (150) and E (1,750). B, C, and D stay at cost. Debit cost of goods sold 1,900; credit allowance for inventory write-down 1,900.</p>
+      </section>
+
       <section class="section" id="traps">
         <h2>Exam traps</h2>
         <ul>
@@ -396,6 +462,9 @@
           <li>Do not write inventory up when NRV exceeds cost. Items A, B, and C stay at historical cost. Only D is reduced.</li>
           <li>The write-down in this chapter debits cost of goods sold and credits an allowance, a contra-inventory account.</li>
           <li>Turnover uses cost of goods sold, not sales. Days on hand uses 365 ÷ turnover, not turnover ÷ 365.</li>
+          <li>Selling and administrative expenses, and administrative overhead, are not part of inventory or of cost of goods sold. Factory overhead is.</li>
+          <li>When purchase prices are falling, FIFO no longer reports the highest income. Hamilton is the lecture’s falling-price case: FIFO cost of goods sold is 36,000 and average cost is 31,500.</li>
+          <li>A missing-amount problem is the cost-of-goods-sold equation plus gross profit and pretax income. Case B on the slide is solved from the bottom: expenses = gross profit − pretax income, and a loss makes expenses larger than gross profit.</li>
         </ul>
       </section>
 

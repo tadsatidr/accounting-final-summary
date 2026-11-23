@@ -16,15 +16,21 @@
     <label class="nav-btn" for="nav-toggle">Menu</label>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="chapter-5.html">Ch 5 Cash</a>
-      <a href="chapter-6.html">Ch 6 Inventory</a>
-      <a href="chapter-7.html">Ch 7 PPE</a>
-      <a href="chapter-8.html">Ch 8 Liabilities</a>
+      <a href="chapter-5.html">Part 1 Cash</a>
+      <a href="chapter-6.html">Part 2 Inventories</a>
+      <a href="chapter-7.html">Part 3 PPE</a>
+      <a href="chapter-8.html">Part 4 Liabilities</a>
       <a href="formulas.html">Formulas</a>
       <a href="journal-entries.html">Journal entries</a>
     </nav>
   </div>
 </header>
+<div class="scope">
+  <div class="scope-inner">
+    <p><strong>Exam scope.</strong> Official final-exam outline (chapters 5–8):</p>
+    <p>Part 1: Cash and Receivables — anything in Ch. 5 might be on the final. Part 2: Inventories — anything in Ch. 6 might be on the final. Part 3: PPE and Intangible Assets — anything in Ch. 7 might be on the final. Part 4: Liabilities — anything in Ch. 8 might be on the final. You will not have to calculate bond prices or mortgage payments.</p>
+  </div>
+</div>
 <main id="main" class="wrap">
   <section class="section">
     <p class="kicker">Cheat sheet</p>
@@ -33,7 +39,7 @@
   </section>
 
   <section class="section" id="ch5">
-    <h2>Chapter 5 · Cash and receivables</h2>
+    <h2>Part 1 · Chapter 5 Cash and Receivables</h2>
     <div class="formula">
       <p class="eq">Correct cash (bank) = bank balance + deposits in transit − outstanding checks ± bank errors</p>
       <p>Hunt: 14,422 + 3,100 − 937 = 16,585. Outstanding checks = 326 + 426 + 185. A voided check is omitted.</p>
@@ -78,7 +84,7 @@
   </section>
 
   <section class="section" id="ch6">
-    <h2>Chapter 6 · Inventory</h2>
+    <h2>Part 2 · Chapter 6 Inventories</h2>
     <div class="formula">
       <p class="eq">Net purchases = purchases + freight-in − purchase returns − purchase discounts</p>
       <p>Grantsville: 15,400 + 970 − 300 − 194 = 15,876. Shirt discount = 2% × 9,700 = 194.</p>
@@ -121,7 +127,7 @@
   </section>
 
   <section class="section" id="ch7">
-    <h2>Chapter 7 · PPE and intangibles</h2>
+    <h2>Part 3 · Chapter 7 PPE and Intangible Assets</h2>
     <div class="formula">
       <p class="eq">Capitalized cost includes invoice price, sales tax, legal fees, transportation, and installation. A cash discount reduces cost. Interest on the purchase is expensed.</p>
       <p>Truck: (15,000 × 0.98) + 396 = 15,096.</p>
@@ -173,7 +179,8 @@
   </section>
 
   <section class="section" id="ch8">
-    <h2>Chapter 8 · Liabilities</h2>
+    <h2>Part 4 · Chapter 8 Liabilities</h2>
+    <p>Bond issue prices and mortgage payments will be given. The journal entries, and the split of a given payment between interest and principal, are still examined.</p>
     <div class="formula">
       <p class="eq">Accounts payable turnover = Cost of goods sold ÷ Average accounts payable</p>
       <p class="eq">Average days to pay = 365 ÷ Accounts payable turnover</p>
@@ -189,19 +196,20 @@
     </div>
     <div class="formula">
       <p class="eq">Mortgage interest this month = unpaid principal × annual rate × 1/12</p>
-      <p class="eq">Principal this month = payment − interest this month</p>
-      <p>McGiven: payment = PMT(0.08/12, 360, 100000) = 733.76. First interest = 666.67. First principal = 67.09. A $200,000, 20-year, 8% mortgage: payment = 1,672.88; first interest = 1,333.33; first principal = 339.55.</p>
+      <p class="eq">Principal this month = given payment − interest this month</p>
+      <p>The payment is given. McGiven’s payment is 733.76. First interest = 100,000 × 8% × 1/12 = 666.67. First principal = 733.76 − 666.67 = 67.09. Computing the payment itself is not on the final.</p>
     </div>
     <div class="formula">
       <p class="eq">Cash interest for a bond period = face × coupon rate × (months in the period / 12)</p>
       <p>$1,000 at 8%: annual 80, semiannual 40, quarterly 20. Amazon: 100,000 × 10% × 1/2 = 5,000. The 10-year, 6% bond of face 1,000, interest semiannual: 30 per period.</p>
     </div>
-    <div class="formula">
-      <p class="eq">Issue price = PV of principal at the market rate per period + PV of the interest annuity at that same rate</p>
-      <p>Par, 5%, n = 4: 100,000 × 0.82270 + 5,000 × 3.54595 = 82,270 + 17,730 = 100,000.</p>
-      <p>Discount, 6%, n = 4: 100,000 × 0.79209 + 5,000 × 3.46511 = 79,209 + 17,326 = 96,535. Discount = 3,465.</p>
-      <p>Premium, 4%, n = 4: 100,000 × 0.85480 + 5,000 × 3.62990 = 85,480 + 18,150 = 103,630. Premium = 3,630.</p>
-    </div>
+    <details class="not-examined">
+      <summary>Not examined — present-value factors for the bond price</summary>
+      <div class="formula">
+        <p class="eq">Issue price = PV of principal + PV of the interest annuity, both at the market rate per period</p>
+        <p>Par, 5%, n = 4: 100,000 × 0.82270 + 5,000 × 3.54595 = 100,000. Discount, 6%: 100,000 × 0.79209 + 5,000 × 3.46511 = 96,535. Premium, 4%: 100,000 × 0.85480 + 5,000 × 3.62990 = 103,630. You will not be asked to calculate these.</p>
+      </div>
+    </details>
     <div class="formula">
       <p class="eq">Market rate = coupon → par. Market rate above coupon → discount. Market rate below coupon → premium.</p>
       <p>When market rates rise, bond prices fall.</p>
