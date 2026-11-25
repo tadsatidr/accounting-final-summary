@@ -1,157 +1,110 @@
 (function () {
   "use strict";
   var ALL = window.PRACTICE_QUESTIONS || [];
-  var KEY = "fa1-practice-exam-v1";
+  var KEY = "fa1-practice-exam-v2";
   var PARTS = { 1: "Part 1 · Cash & Receivables", 2: "Part 2 · Inventories", 3: "Part 3 · PPE & Intangibles", 4: "Part 4 · Liabilities" };
-  var LETTERS = ["A", "B", "C", "D"];
-  var byId = {};
-  ALL.forEach(function (q) { byId[q.id] = q; });
+  var L = ["A", "B", "C", "D"];
 
-  var state = load() || { filter: "all", order: null, answers: {}, submitted: false };
-
+  var state = load();
   function load() {
     try {
       var s = JSON.parse(localStorage.getItem(KEY));
-      if (s && typeof s === "object" && s.answers) return s;
+      if (s && s.answers) return s;
     } catch (e) {}
-    return null;
+    return { filter: "all", answers: {} };
   }
-  function save() {
-    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  function inSet() {
+    return ALL.filter(function (q) { return state.filter === "all" || String(q.part) === String(state.filter); });
   }
 
-  function currentQuestions() {
-    var ids = state.order && state.order.length === ALL.length ? state.order : ALL.map(function (q) { return q.id; });
-    return ids.map(function (id) { return byId[id]; }).filter(function (q) {
-      return q && (state.filter === "all" || String(q.part) === String(state.filter));
+  function feedback(q, li) {
+    var pick = state.answers[q.id];
+    var btns = li.querySelectorAll(".pe-opt");
+    btns.forEach(function (b, k) {
+      b.disabled = true;
+      b.setAttribute("aria-pressed", k === pick ? "true" : "false");
+      if (k === q.ans) b.classList.add("is-correct");
+      else if (k === pick) b.classList.add("is-wrong");
+      else b.classList.add("is-dim");
     });
-  }
-
-  function el(tag, cls, html) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (html != null) e.innerHTML = html;
-    return e;
+    var ok = pick === q.ans;
+    var fb = document.createElement("p");
+    fb.className = "pe-fb";
+    fb.innerHTML = (ok ? '<strong class="ok">Correct.</strong> ' : '<strong class="no">Not quite — the answer is ' + L[q.ans] + ".</strong> ") + q.expl;
+    li.appendChild(fb);
   }
 
   function render() {
     var list = document.getElementById("pe-list");
     list.innerHTML = "";
-    var qs = currentQuestions();
-    qs.forEach(function (q, i) {
-      var fs = el("fieldset", "pe-q");
-      fs.id = "q" + q.id;
-      var chosen = state.answers[q.id];
-      var legend = el("legend", "pe-stem");
-      legend.innerHTML = '<span class="pe-num">' + (i + 1) + ".</span> " + q.q;
-      fs.appendChild(legend);
-      var meta = el("p", "pe-meta", PARTS[q.part] + " · " + (q.kind === "calc" ? "Calculation" : "Concept"));
-      fs.appendChild(meta);
+    inSet().forEach(function (q, i) {
+      var li = document.createElement("li");
+      li.className = "pe-q";
+      li.id = "q" + q.id;
+      var stem = document.createElement("p");
+      stem.className = "pe-stem";
+      stem.innerHTML = '<span class="pe-num">' + (i + 1) + ".</span>" + q.q;
+      li.appendChild(stem);
+      var opts = document.createElement("div");
+      opts.className = "pe-opts";
       q.opts.forEach(function (o, k) {
-        var lab = el("label", "pe-opt");
-        var inp = document.createElement("input");
-        inp.type = "radio";
-        inp.name = "q" + q.id;
-        inp.value = k;
-        inp.checked = chosen === k;
-        inp.disabled = !!state.submitted;
-        inp.addEventListener("change", function () {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "pe-opt";
+        b.innerHTML = '<span class="pe-letter">' + L[k] + "</span><span>" + o + "</span>";
+        b.addEventListener("click", function () {
+          if (state.answers[q.id] != null) return;
           state.answers[q.id] = k;
           save();
-          updateProgress();
+          feedback(q, li);
+          status();
         });
-        lab.appendChild(inp);
-        lab.appendChild(el("span", "pe-letter", LETTERS[k]));
-        lab.appendChild(el("span", "pe-text", o));
-        if (state.submitted) {
-          if (k === q.ans) lab.classList.add("is-correct");
-          else if (chosen === k) lab.classList.add("is-wrong");
-        }
-        fs.appendChild(lab);
+        opts.appendChild(b);
       });
-      if (state.submitted) {
-        var ok = chosen === q.ans;
-        fs.classList.add(ok ? "q-right" : "q-wrong");
-        var verdict = ok ? "Correct." : (chosen == null ? "Not answered." : "Incorrect.");
-        fs.appendChild(el("div", "pe-expl", "<strong>" + verdict + " Answer: " + LETTERS[q.ans] + ".</strong> " + q.expl));
-      }
-      list.appendChild(fs);
+      li.appendChild(opts);
+      if (state.answers[q.id] != null) feedback(q, li);
+      list.appendChild(li);
     });
-    document.querySelectorAll(".pe-filter").forEach(function (b) {
-      var on = String(b.getAttribute("data-filter")) === String(state.filter);
-      b.classList.toggle("is-on", on);
-      b.setAttribute("aria-pressed", on ? "true" : "false");
+    document.querySelectorAll(".pe-tab").forEach(function (t) {
+      var on = t.getAttribute("data-filter") === String(state.filter);
+      t.classList.toggle("is-on", on);
+      t.setAttribute("aria-current", on ? "true" : "false");
     });
-    document.getElementById("pe-submit").disabled = !!state.submitted;
-    renderResults();
-    updateProgress();
+    status();
   }
 
-  function updateProgress() {
-    var qs = currentQuestions();
-    var n = qs.filter(function (q) { return state.answers[q.id] != null; }).length;
-    document.getElementById("pe-progress").textContent = n + " / " + qs.length + " answered";
-  }
-
-  function renderResults() {
-    var box = document.getElementById("pe-results");
-    if (!state.submitted) { box.hidden = true; box.innerHTML = ""; return; }
-    var qs = currentQuestions();
-    var per = {};
-    var right = 0, unanswered = 0;
+  function status() {
+    var qs = inSet(), done = 0, right = 0, per = {};
     qs.forEach(function (q) {
-      per[q.part] = per[q.part] || { right: 0, total: 0 };
-      per[q.part].total++;
-      if (state.answers[q.id] == null) unanswered++;
-      if (state.answers[q.id] === q.ans) { right++; per[q.part].right++; }
+      var p = per[q.part] = per[q.part] || { r: 0, n: 0 };
+      p.n++;
+      if (state.answers[q.id] != null) { done++; if (state.answers[q.id] === q.ans) { right++; p.r++; } }
     });
-    var pct = qs.length ? Math.round(right / qs.length * 100) : 0;
-    var rows = Object.keys(per).sort().map(function (p) {
-      var r = per[p];
-      return "<tr><td>" + PARTS[p] + '</td><td class="num">' + r.right + " / " + r.total + '</td><td class="num">' + Math.round(r.right / r.total * 100) + "%</td></tr>";
-    }).join("");
-    box.innerHTML = '<p class="kicker">Your result</p><h2 id="pe-score">' + right + " / " + qs.length + " correct (" + pct + "%)</h2>" +
-      (unanswered ? "<p>" + unanswered + " unanswered question" + (unanswered > 1 ? "s were" : " was") + " counted as wrong.</p>" : "") +
-      '<div class="table-wrap"><table><thead><tr><th>Part</th><th class="num">Score</th><th class="num">%</th></tr></thead><tbody>' + rows + "</tbody></table></div>" +
-      "<p>Correct answers are marked in green and your wrong picks in red. Each question shows its explanation below the options. Press <b>Reset</b> to try again.</p>";
-    box.hidden = false;
+    document.getElementById("pe-score").textContent = right + "/" + done + " correct";
+    document.getElementById("pe-left").textContent = (qs.length - done) + " left";
+    var sum = document.getElementById("pe-summary");
+    if (qs.length && done === qs.length) {
+      var items = Object.keys(per).sort().map(function (k) {
+        return "<li><span>" + PARTS[k] + "</span><span>" + per[k].r + "/" + per[k].n + "</span></li>";
+      }).join("");
+      sum.innerHTML = "<h2>Done: " + right + "/" + qs.length + " correct (" + Math.round(right / qs.length * 100) + "%)</h2><ul>" + items + "</ul><p>Press Reset to try this set again.</p>";
+      sum.hidden = false;
+    } else { sum.hidden = true; sum.innerHTML = ""; }
   }
 
-  function shuffle(a) {
-    for (var i = a.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = a[i]; a[i] = a[j]; a[j] = t;
-    }
-    return a;
-  }
-
-  document.querySelectorAll(".pe-filter").forEach(function (b) {
-    b.addEventListener("click", function () {
-      state.filter = b.getAttribute("data-filter");
-      state.submitted = false;
-      save();
-      render();
+  document.querySelectorAll(".pe-tab").forEach(function (t) {
+    t.addEventListener("click", function () {
+      state.filter = t.getAttribute("data-filter");
+      save(); render();
+      window.scrollTo({ top: 0 });
     });
-  });
-  document.getElementById("pe-shuffle").addEventListener("click", function () {
-    state.order = shuffle(ALL.map(function (q) { return q.id; }));
-    save(); render();
-  });
-  document.getElementById("pe-unshuffle").addEventListener("click", function () {
-    state.order = null;
-    save(); render();
-  });
-  document.getElementById("pe-submit").addEventListener("click", function () {
-    state.submitted = true;
-    save(); render();
-    document.getElementById("pe-results").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   document.getElementById("pe-reset").addEventListener("click", function () {
-    var qs = currentQuestions();
-    qs.forEach(function (q) { delete state.answers[q.id]; });
-    state.submitted = false;
+    inSet().forEach(function (q) { delete state.answers[q.id]; });
     save(); render();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   });
 
   render();
