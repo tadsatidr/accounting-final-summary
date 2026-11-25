@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice exam · 80 MCQs · FA1 final</title>
+<meta name="description" content="80 multiple-choice practice questions for the Financial Accounting 1 final, Parts 1–4 (Chapters 5–8), with scoring by part and worked explanations.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Financial Accounting 1<small>Final review · semester 1/2026</small></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <label class="nav-btn" for="nav-toggle">Menu</label>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="chapter-5.html">Part 1 Cash</a>
+      <a href="chapter-6.html">Part 2 Inventories</a>
+      <a href="chapter-7.html">Part 3 PPE</a>
+      <a href="chapter-8.html">Part 4 Liabilities</a>
+      <a href="formulas.html">Formulas</a>
+      <a href="journal-entries.html">Journal entries</a>
+      <a href="practice-exam.html">Practice exam</a>
+    </nav>
+  </div>
+</header>
+<div class="scope">
+  <div class="scope-inner">
+    <p><strong>Exam scope.</strong> Official final-exam outline (chapters 5–8):</p>
+    <p>Part 1: Cash and Receivables — anything in Ch. 5 might be on the final. Part 2: Inventories — anything in Ch. 6 might be on the final. Part 3: PPE and Intangible Assets — anything in Ch. 7 might be on the final. Part 4: Liabilities — anything in Ch. 8 might be on the final. You will not have to calculate bond prices or mortgage payments.</p>
+  </div>
+</div>
+<main id="main" class="wrap">
+  <section class="section">
+    <p class="kicker">Practice exam · Parts 1–4</p>
+    <h1>80-question multiple-choice practice exam</h1>
+    <p>Twenty questions per part, about half concepts and half calculations, built from the lecture slides’ methods and terms. Bond-price and mortgage-payment calculations are left out, as the outline says; where a bond issue price or mortgage payment is needed, it is given. Pick an answer for each question, then press <b>Submit</b> to see your score by part and an explanation for every question. Your answers are saved in this browser until you press <b>Reset</b>.</p>
+    <div class="pe-controls" role="group" aria-label="Choose questions">
+      <span class="pe-label">Questions:</span>
+      <button type="button" class="pe-filter" data-filter="all">All 80</button>
+      <button type="button" class="pe-filter" data-filter="1">Part 1 Cash</button>
+      <button type="button" class="pe-filter" data-filter="2">Part 2 Inventories</button>
+      <button type="button" class="pe-filter" data-filter="3">Part 3 PPE</button>
+      <button type="button" class="pe-filter" data-filter="4">Part 4 Liabilities</button>
+    </div>
+    <div class="pe-controls">
+      <button type="button" id="pe-shuffle">Shuffle question order</button>
+      <button type="button" id="pe-unshuffle">Original order</button>
+    </div>
+  </section>
+
+  <div id="pe-results" class="section pe-results" hidden aria-live="polite"></div>
+
+  <form id="pe-form" novalidate>
+    <div id="pe-list"></div>
+  </form>
+
+  <div class="pe-bar" id="pe-bar">
+    <span id="pe-progress">0 / 80 answered</span>
+    <span class="pe-bar-btns">
+      <button type="button" id="pe-submit" class="pe-primary">Submit</button>
+      <button type="button" id="pe-reset">Reset</button>
+    </span>
+  </div>
+  <noscript><p class="section">This practice exam needs JavaScript to run.</p></noscript>
+</main>
+<footer class="footer">
+  Practice questions written for revision from the Financial Accounting 1/2026 lecture slides, chapters 5–8. Not the real exam.
+</footer>
+<script src="js/site.js"></script>
+<script src="js/practice-exam-data.js"></script>
+<script src="js/practice-exam.js"></script>
+</body>
+</html>
